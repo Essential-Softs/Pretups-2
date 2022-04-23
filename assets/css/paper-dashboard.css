@@ -350,8 +350,6 @@ Copyright (c) 2015 Daniel Eden
 .show > .navbar .navbar-nav > a.btn.dropdown-toggle,
 .show > .navbar .navbar-nav > a.btn.dropdown-toggle:focus,
 .show > .navbar .navbar-nav > a.btn.dropdown-toggle:hover {
-  background-color: white !important;
-  color: #000 !important;
   box-shadow: none !important;
 }
 .btn:not([data-action]):hover,
@@ -2276,7 +2274,7 @@ p.description {
 .text-primary,
 a.text-primary:focus,
 a.text-primary:hover {
-  color: #51cbce !important;
+  color: #007bff !important;
 }
 
 .text-info,
@@ -6053,6 +6051,32 @@ License - nucleoapp.com/license/
 Content CSS  Starts
 ***************************
 ****************************/
+.btn {
+  color: #fff;
+  background-color: #e50029;
+  padding: 10px 21px;
+  font-weight: 600;
+  font-size: 12px;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s all ease;
+  -webkit-transition: 0.5s all ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.btn:hover {
+  color: #e50029;
+  background-color: #ffebed;
+}
+
+/* ************************
+*************************** 
+Home CSS  Starts
+***************************
+****************************/
 
 .ml-45 {
   margin-left: 45px;
@@ -6202,7 +6226,7 @@ Content CSS  Starts
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
-
+  margin: 30px 0px;
   color: #333333;
 }
 
@@ -6286,6 +6310,184 @@ Content CSS  Starts
 
 .sidebar-dropdowns {
   font-size: 12px !important;
+}
+
+/* ************************
+*************************** 
+Comission Profile CSS  Starts
+***************************
+****************************/
+
+.comission-profile-first-toggle {
+  border: 1px solid #dfe3e8;
+  border-radius: 26.5px;
+  padding: 3px;
+  width: fit-content;
+}
+
+.nav-tabs .nav-link {
+  color: #454f5b;
+
+  mix-blend-mode: normal;
+  opacity: 0.9;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  border: 1px solid #000 !important;
+  border-radius: 60px;
+  padding: 10px 14px;
+  border-top-left-radius: 60px !important;
+  border-top-right-radius: 60px !important;
+  background-color: #212b35 !important;
+  color: #fff !important;
+}
+
+.card {
+  border-radius: 8px;
+}
+
+.light-text {
+  color: #919eab !important;
+}
+
+.btn-reset {
+  color: #919eab;
+  background-color: transparent;
+  border: 1.2px solid #dfe3e8;
+  box-sizing: border-box;
+  border-radius: 21px;
+}
+
+.btn-light-secondary {
+  color: #e50029;
+  background: #ffebed;
+  border-radius: 21px;
+}
+
+.comission .comission-profile-filter-form select {
+  border: 1px solid #dfe3e8;
+  border-radius: 4px;
+  padding: 16px 10px;
+}
+
+.comission .comission-profile-filter-form input {
+  border: 1px solid #dfe3e8;
+  border-radius: 4px;
+  padding: 16px 10px;
+}
+.comission .comission-profile-filter-form .btn-light-secondary {
+  background: #ffebed !important;
+  color: #e50029 !important;
+}
+
+.comission .comission-profile-filter-form label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #454f5b;
+}
+
+h4 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #181818;
+  mix-blend-mode: normal;
+  opacity: 0.9;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.935rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+
+.has-search .form-control {
+  padding-left: 2.375rem;
+  border-top-left-radius: 6px !important;
+  border-bottom-left-radius: 6px !important;
+  background: #f4f6f8;
+  border: none !important;
+}
+
+.has-search .input-group-append {
+  background: #ffebed !important;
+  border-top-right-radius: 6px !important;
+  border-bottom-right-radius: 6px !important;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}
+
+.text-green {
+  color: #28c064;
+}
+
+.comission table select {
+  width: 63%;
+  border-color: #919eab !important;
+}
+
+.comission table {
+  width: 96%;
+  margin: 0px 30px;
+}
+
+.comission .pagination-entries input {
+  border: 1px solid #dfe3e8;
+  border-radius: 6px;
+  height: 30px;
+  width: 128px;
+}
+
+.comission .pagination-entries label {
+  padding: 5px;
+}
+
+.comission .pagination-entries p {
+  margin: 4px 0px !important;
+}
+
+.page-link {
+  border: 1px solid rgba(209, 216, 245, 0.6);
+  padding: 0.6rem 0.75rem;
+  color: #686868 !important;
+}
+.page-link span {
+  color: #007bff !important;
+}
+
+.input-pagination input {
+  background: #ffffff;
+  border: 1px solid rgba(209, 216, 245, 0.6);
+  border-radius: 2px;
+  height: 33px;
+  width: 30% !important;
+  align-self: center;
+}
+
+.input-pagination .form-group {
+  background: #ffffff;
+  border: 1px solid rgba(209, 216, 245, 0.6) !important;
+  border-radius: 4px;
+  padding: 3px 10px;
+  width: 60%;
+}
+
+.input-pagination label {
+  margin-bottom: 0;
+}
+
+.input-pagination a {
+  align-self: center;
+  color: #686868;
 }
 
 /* ************************
