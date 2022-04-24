@@ -6431,7 +6431,8 @@ h4 {
 }
 
 .comission table select {
-  width: 63%;
+  width: 51px;
+  padding: 0.375rem 0.45rem;
   border-color: #919eab !important;
 }
 
@@ -6464,12 +6465,16 @@ h4 {
   color: #007bff !important;
 }
 
+.input-pagination {
+  width: 185px;
+}
+
 .input-pagination input {
   background: #ffffff;
-  border: 1px solid rgba(209, 216, 245, 0.6);
+  border: 1px solid rgba(209, 216, 245, 0.6) !important;
   border-radius: 2px;
   height: 33px;
-  width: 30% !important;
+  width: 42px !important;
   align-self: center;
 }
 
@@ -6478,7 +6483,6 @@ h4 {
   border: 1px solid rgba(209, 216, 245, 0.6) !important;
   border-radius: 4px;
   padding: 3px 10px;
-  width: 60%;
 }
 
 .input-pagination label {
@@ -6488,6 +6492,19 @@ h4 {
 .input-pagination a {
   align-self: center;
   color: #686868;
+}
+
+.upload-image .download-template {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
+  color: #454f5b;
+}
+
+.upload-image .download-icon {
+  color: #e50029;
 }
 
 /* ************************
