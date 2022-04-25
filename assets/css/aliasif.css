@@ -140,11 +140,26 @@ Operator User CSS  Starts
   margin: 0;
 }
 
+.ch-operator-btn .ch-btn-container {
+  color: #fff;
+  background-color: #e50029;
+  padding: 9px 21px;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s all ease;
+  -webkit-transition: 0.5s all ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
 .ch-operator-btn a {
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
+  text-decoration: none;
   letter-spacing: 0.583333px;
   text-transform: uppercase;
   color: #ffffff;
@@ -163,4 +178,49 @@ Operator User CSS  Starts
   top: 5px;
   width: 2px;
   height: 36px;
+}
+
+.ch-form-operator select {
+  background: #ffffff !important;
+  border: 1px solid #dbdbdb !important;
+  border-radius: 21px !important;
+  padding: 10px 10px !important;
+}
+
+.ch-operator-search {
+  padding: 20px 40px !important;
+}
+
+.ch-operator-table .ch-operator-th {
+  width: 11% !important;
+}
+
+.ch-operator-table thead tr th:last-child {
+  text-align: end;
+}
+
+.ch-operator-table tbody tr td:last-child {
+  text-align: end;
+}
+
+/* ************************
+*************************** 
+Channel User CSS  Starts
+***************************
+****************************/
+
+.ch-channel-search {
+  padding: 20px 40px !important;
+}
+
+.ch-channel-table .ch-channel-th {
+  width: 15% !important;
+}
+
+.ch-channel-table thead tr th:last-child {
+  text-align: end;
+}
+
+.ch-channel-table tbody tr td:last-child {
+  text-align: end;
 }
