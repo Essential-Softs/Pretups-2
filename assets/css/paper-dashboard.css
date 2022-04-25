@@ -6237,7 +6237,10 @@ Home CSS  Starts
   padding: 20px 25px;
   margin-bottom: 30px;
 }
-
+.dashboard-media h5{
+  font-size: 15px;
+  font-weight: 600;
+}
 .icon-background {
   border-radius: 50%;
   background-color: #f9fafb;
