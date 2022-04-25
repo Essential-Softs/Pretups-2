@@ -225,10 +225,10 @@
               <div class="card">
                 <div>
                   <div class="row py-4 mb-3">
-                    <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
                       <div class="ch-operator-btn d-flex align-items-center">
                         <h4 class="mr-3 pl-4">Operator User</h4>
-                        <div class="btn mr-4 d-flex">
+                        <div class="ch-btn-container mr-4 d-flex">
                           <a class="mr-4 text-white" href="#ds">
                             <i class="fal fa-plus-circle mr-2 ch-icon"></i
                             >Single
@@ -240,13 +240,41 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                      <a class="btn mr-4 float-md-right ml-4 ml-md-0" href=""
-                        ><i class="fal fa-plus-circle mr-2"></i>ADD Transfer
-                        Control PROFILE</a
+                    <div class="col-lg-8 col-md-6 col-sm-12">
+                      <form
+                        class="comission-profile-filter-form ch-form-operator"
+                        action=""
                       >
+                        <div class="form-row justify-content-end px-4">
+                          <div
+                            class="form-group col-xl-2 col-lg-4 col-md-4 col-sm-12"
+                          >
+                            <select id="inputState" class="form-control">
+                              <option selected>
+                                <i
+                                  class="fal fa-arrow-to-bottom download-icon mr-2"
+                                ></i>
+                                Download
+                              </option>
+                              <option>One</option>
+                              <option>Two</option>
+                              <option>Three</option>
+                            </select>
+                          </div>
+                          <div
+                            class="form-group col-xl-2 col-lg-4 col-md-4 col-sm-12"
+                          >
+                            <select id="inputState" class="form-control">
+                              <option selected>Edit Columns</option>
+                              <option>One</option>
+                              <option>Two</option>
+                              <option>Three</option>
+                            </select>
+                          </div>
+                        </div>
+                      </form>
                     </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
                       <!-- <div class="form-group has-search">
                           <span class="fa fa-search form-control-feedback"></span>
                           <input type="text" class="form-control" placeholder="Search">
