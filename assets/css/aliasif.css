@@ -122,3 +122,45 @@ Transfer Control Profile CSS  Starts
   float: right;
   margin-top: 20px;
 }
+
+/* ************************
+*************************** 
+Operator User CSS  Starts
+***************************
+****************************/
+.ch-operator-btn {
+  padding: 0 30px;
+}
+
+.ch-operator-btn h4 {
+  align-self: center;
+}
+
+.ch-operator-btn .btn {
+  margin: 0;
+}
+
+.ch-operator-btn a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.583333px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.ch-operator-btn .ch-icon {
+  color: #ff9fb1;
+  font-size: 16px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.ch-operator-btn .ch-line {
+  background: rgba(249, 105, 130, 0.957878);
+  position: absolute;
+  left: 95px;
+  top: 5px;
+  width: 2px;
+  height: 36px;
+}
