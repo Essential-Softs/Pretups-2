@@ -4325,6 +4325,15 @@ License - nucleoapp.com/license/
   height: 20px!important;
   display: inline-block!important;
 }
+.sidebar-wrapper a i::before{
+  height: 20px!important;
+  display: inline-block!important;
+}
+.sidenav-bottom-area{
+  position: fixed;
+  bottom: 0;
+  padding: 0 30px;
+}
 .sidebar .sidebar-wrapper .dropdown .dropdown-backdrop,
 .off-canvas-sidebar .sidebar-wrapper .dropdown .dropdown-backdrop {
   display: none !important;
@@ -4487,7 +4496,6 @@ License - nucleoapp.com/license/
 }
 .sidebar .logo .simple-text,
 .off-canvas-sidebar .logo .simple-text {
-  text-transform: uppercase;
   padding: 0.5rem 0;
   display: block;
   white-space: nowrap;
@@ -4497,6 +4505,12 @@ License - nucleoapp.com/license/
   font-weight: 400;
   line-height: 30px;
   overflow: hidden;
+}
+sup{
+  font-size: 13px;
+  position: relative;
+  top: -10px;
+  left: -5px;
 }
 .sidebar .logo-tim,
 .off-canvas-sidebar .logo-tim {
@@ -5031,7 +5045,11 @@ License - nucleoapp.com/license/
 }
 
 .footer {
-  padding: 8px 0;
+  padding-top: 100px;
+  background-image: url('../img/footer-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 .footer.footer-default {
   background-color: #f2f2f2;
@@ -6544,7 +6562,16 @@ h4 {
 Content CSS  Ends
 ***************************
 ****************************/
-
+@media screen and (max-width: 991px) {
+  .navbar-collapse.justify-content-end.collapse.show .navbar-nav{
+    flex-direction: row!important;
+    justify-content: center!important;
+}
+.navbar-collapse.justify-content-end.collapse.show .navbar-nav a{
+  display: flex;
+  align-items: center;
+}
+}
 @media screen and (max-width: 768px) {
   .card-stats [class*="col-"] .statistics::after {
     display: none;
