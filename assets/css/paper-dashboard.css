@@ -6254,7 +6254,7 @@ Home CSS  Starts
   padding: 20px 25px;
   margin-bottom: 30px;
 }
-.dashboard-media h5{
+.dashboard-media h5 {
   font-size: 15px;
   font-weight: 600;
 }
@@ -6352,7 +6352,7 @@ Comission Profile CSS  Starts
 
 .nav-tabs .nav-link {
   color: #454f5b;
-
+  border: none;
   mix-blend-mode: normal;
   opacity: 0.9;
 }
@@ -6435,8 +6435,15 @@ h4 {
   color: #aaa;
 }
 
+.has-search .input-group-text {
+  border-top-left-radius: 6px !important;
+  border-bottom-left-radius: 6px !important;
+  background: #f4f6f8 !important;
+  border: none !important;
+}
+
 .has-search .form-control {
-  padding-left: 2.375rem;
+  padding-left: 0.575rem;
   border-top-left-radius: 6px !important;
   border-bottom-left-radius: 6px !important;
   background: #f4f6f8;
