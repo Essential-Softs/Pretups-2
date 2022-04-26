@@ -210,7 +210,7 @@ Channel User CSS  Starts
 ****************************/
 
 .ch-channel-search {
-  padding: 20px 40px !important;
+  padding: 20px 12px !important;
 }
 
 .ch-channel-table .ch-channel-th {
@@ -223,4 +223,56 @@ Channel User CSS  Starts
 
 .ch-channel-table tbody tr td:last-child {
   text-align: end;
+}
+
+.table-container {
+  overflow: auto;
+}
+
+.table-container table {
+  width: 1530px;
+  overflow: scroll;
+}
+
+/* ************************
+*************************** 
+Approval Operator User CSS  Starts
+***************************
+****************************/
+
+.ch-approval-operator-table .ch-approval-th {
+  width: 10% !important;
+}
+
+.ch-approval-operator-table thead tr th:last-child,
+.ch-approval-operator-table thead tr th:nth-last-child(2) {
+  text-align: end;
+}
+
+.ch-approval-operator-table tbody tr td:last-child,
+.ch-approval-operator-table tbody tr td:nth-last-child(2) {
+  text-align: end;
+  font-weight: 700;
+}
+
+.ch-approval-btns {
+  border: none !important;
+}
+
+.ch-approval-btns .nav-link {
+  background: #ffffff;
+  box-shadow: 0px 4px 6px rgba(226, 230, 245, 0.8);
+  border-radius: 4px;
+}
+
+.ch-approval-btns .nav-link.active,
+.ch-approval-btns .nav-item.show .nav-link {
+  background: #ffbe45 !important;
+  box-shadow: 0px 4px 6px rgba(226, 230, 245, 0.801461) !important;
+  border-radius: 4px !important;
+  border: none !important;
+}
+
+.text-bold {
+  font-weight: 700;
 }

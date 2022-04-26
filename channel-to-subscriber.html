@@ -185,6 +185,7 @@
               </ul>
             </div>
             <div class="col-12">
+              <h4 class="mb-4">Transfer Rules</h4>
               <ul
                 class="nav nav-tabs comission-profile-first-toggle mb-5"
                 id="myTab"
@@ -224,7 +225,6 @@
                   role="tabpanel"
                   aria-labelledby="single-operation-tab"
                 >
-                  <h4 class="mb-4">Commission Profile</h4>
                   <div class="card mb-4">
                     <div class="d-flex justify-content-between px-3 py-3">
                       <h4>Filters</h4>
@@ -242,7 +242,7 @@
                     <div class="collapse show" id="collapseExample">
                       <div class="card-body">
                         <form class="comission-profile-filter-form" action="">
-                          <div class="form-row">
+                          <div class="form-row align-items-end">
                             <div
                               class="form-group col-xl-2 col-lg-4 col-md-4 col-sm-12"
                             >
@@ -269,17 +269,6 @@
                             <div
                               class="form-group col-xl-2 col-lg-4 col-md-4 col-sm-12"
                             >
-                              <label for="inputState">Geography</label>
-                              <select id="inputState" class="form-control">
-                                <option selected>All</option>
-                                <option>One</option>
-                                <option>Two</option>
-                                <option>Three</option>
-                              </select>
-                            </div>
-                            <div
-                              class="form-group col-xl-2 col-lg-4 col-md-4 col-sm-12"
-                            >
                               <label for="inputState">Grade</label>
                               <select id="inputState" class="form-control">
                                 <option selected>All</option>
@@ -302,27 +291,18 @@
                             <div
                               class="form-group col-xl-2 col-lg-4 col-md-4 col-sm-12"
                             >
-                              <label for="date-and-time"
-                                >Applicable from (Date and Time)</label
-                              >
-                              <input
-                                type="date"
-                                class="form-control"
-                                id="date-and-time"
-                                placeholder=""
-                              />
+                              <div class="form-buttons">
+                                <button type="reset" class="btn btn-reset mr-2">
+                                  Reset
+                                </button>
+                                <button
+                                  type="submit"
+                                  class="btn btn-light-secondary"
+                                >
+                                  Proceed
+                                </button>
+                              </div>
                             </div>
-                          </div>
-                          <div class="d-flex justify-content-end">
-                            <button type="reset" class="btn btn-reset mr-2">
-                              Reset
-                            </button>
-                            <button
-                              type="submit"
-                              class="btn btn-light-secondary"
-                            >
-                              Proceed
-                            </button>
                           </div>
                         </form>
                       </div>
@@ -355,8 +335,8 @@
                         </div>
                         <div class="offset-lg-3 col-lg-3 col-md-6 col-sm-12">
                           <a class="btn mr-4 float-right" href=""
-                            ><i class="fal fa-plus-circle mr-2"></i>ADD
-                            COMMISSION PROFILE</a
+                            ><i class="fal fa-plus-circle mr-2"></i>ADD Transfer
+                            Rules</a
                           >
                         </div>
                       </div>
@@ -386,43 +366,55 @@
                                 class="border-top-0 border-bottom-0"
                                 scope="col"
                               >
-                                Profile set
+                                Request gateway code
                               </th>
                               <th
                                 class="border-top-0 border-bottom-0"
                                 scope="col"
                               >
-                                Domain
+                                Channel domain
                               </th>
                               <th
                                 class="border-top-0 border-bottom-0"
                                 scope="col"
                               >
-                                Category
+                                Channel category
                               </th>
                               <th
                                 class="border-top-0 border-bottom-0"
                                 scope="col"
                               >
-                                Geography
+                                Channel grade
                               </th>
                               <th
                                 class="border-top-0 border-bottom-0"
                                 scope="col"
                               >
-                                Commission Type
+                                Receiver type
                               </th>
                               <th
                                 class="border-top-0 border-bottom-0"
                                 scope="col"
                               >
-                                Version
+                                Receiver service class
                               </th>
                               <th
                                 class="border-top-0 border-bottom-0"
                                 scope="col"
                               >
-                                Applicable from
+                                Service type
+                              </th>
+                              <th
+                                class="border-top-0 border-bottom-0"
+                                scope="col"
+                              >
+                                Sub service
+                              </th>
+                              <th
+                                class="border-top-0 border-bottom-0"
+                                scope="col"
+                              >
+                                Card group set
                               </th>
                               <th
                                 class="border-top-0 border-bottom-0"
@@ -455,43 +447,22 @@
                                   </div>
                                 </form>
                               </th>
-                              <td>
-                                <a class="text-primary" href=""> ComPro1 </a>
-                                <span class="text-green"
-                                  ><sup
-                                    ><i class="fas fa-check-circle"></i
-                                  ></sup>
-                                  (Default)</span
-                                >
-                              </td>
+                              <td>All</td>
                               <td>Distributor</td>
                               <td>Super distributor</td>
-                              <td>Haryana</td>
-                              <td>Normal</td>
-                              <td>
-                                <select id="inputState" class="form-control">
-                                  <option selected>3</option>
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                </select>
-                              </td>
-                              <td>
-                                24-04-2019 <br />
-                                09:10:17
-                              </td>
+                              <td>AUT16056</td>
+                              <td>Postpaid subscriber</td>
+                              <td>All (All)</td>
+                              <td>Postpaid bill payment</td>
+                              <td>Postpaid</td>
+                              <td>neo1</td>
                               <td class="text-success">Active</td>
                               <td>
                                 <div class="action-icons">
                                   <a class="light-text mr-2" href="">
                                     <i class="fal fa-edit"></i>
                                   </a>
-                                  <a class="light-text mr-2" href="">
-                                    <i class="fal fa-cog"></i>
-                                  </a>
-                                  <a class="light-text mr-2" href="">
-                                    <i class="fal fa-ban"></i>
-                                  </a>
+
                                   <a class="light-text mr-2" href="">
                                     <i class="fal fa-trash-alt"></i>
                                   </a>
@@ -505,46 +476,31 @@
                                     <input
                                       type="checkbox"
                                       class="custom-control-input"
-                                      id="c1"
+                                      id="customCheck1"
                                     />
                                     <label
                                       class="custom-control-label"
-                                      for="c1"
+                                      for="customCheck1"
                                     ></label>
                                   </div>
                                 </form>
                               </th>
-                              <td>
-                                <a class="text-primary" href=""> ComPro1 </a>
-                              </td>
+                              <td>All</td>
                               <td>Distributor</td>
                               <td>Super distributor</td>
-                              <td>Haryana</td>
-                              <td>Normal</td>
-                              <td>
-                                <select id="inputState" class="form-control">
-                                  <option selected>3</option>
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                </select>
-                              </td>
-                              <td>
-                                24-04-2019 <br />
-                                09:10:17
-                              </td>
+                              <td>AUT16056</td>
+                              <td>Postpaid subscriber</td>
+                              <td>All (All)</td>
+                              <td>Postpaid bill payment</td>
+                              <td>Postpaid</td>
+                              <td>neo1</td>
                               <td class="text-success">Active</td>
                               <td>
                                 <div class="action-icons">
                                   <a class="light-text mr-2" href="">
                                     <i class="fal fa-edit"></i>
                                   </a>
-                                  <a class="light-text mr-2" href="">
-                                    <i class="fal fa-cog"></i>
-                                  </a>
-                                  <a class="light-text mr-2" href="">
-                                    <i class="fal fa-ban"></i>
-                                  </a>
+
                                   <a class="light-text mr-2" href="">
                                     <i class="fal fa-trash-alt"></i>
                                   </a>
@@ -558,46 +514,31 @@
                                     <input
                                       type="checkbox"
                                       class="custom-control-input"
-                                      id="c2"
+                                      id="customCheck1"
                                     />
                                     <label
                                       class="custom-control-label"
-                                      for="c2"
+                                      for="customCheck1"
                                     ></label>
                                   </div>
                                 </form>
                               </th>
-                              <td>
-                                <a class="text-primary" href=""> ComPro1 </a>
-                              </td>
+                              <td>All</td>
                               <td>Distributor</td>
                               <td>Super distributor</td>
-                              <td>Haryana</td>
-                              <td>Normal</td>
-                              <td>
-                                <select id="inputState" class="form-control">
-                                  <option selected>3</option>
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                </select>
-                              </td>
-                              <td>
-                                24-04-2019 <br />
-                                09:10:17
-                              </td>
+                              <td>AUT16056</td>
+                              <td>Postpaid subscriber</td>
+                              <td>All (All)</td>
+                              <td>Postpaid bill payment</td>
+                              <td>Postpaid</td>
+                              <td>neo1</td>
                               <td class="text-success">Active</td>
                               <td>
                                 <div class="action-icons">
                                   <a class="light-text mr-2" href="">
                                     <i class="fal fa-edit"></i>
                                   </a>
-                                  <a class="light-text mr-2" href="">
-                                    <i class="fal fa-cog"></i>
-                                  </a>
-                                  <a class="light-text mr-2" href="">
-                                    <i class="fal fa-ban"></i>
-                                  </a>
+
                                   <a class="light-text mr-2" href="">
                                     <i class="fal fa-trash-alt"></i>
                                   </a>
@@ -611,46 +552,31 @@
                                     <input
                                       type="checkbox"
                                       class="custom-control-input"
-                                      id="c3"
+                                      id="customCheck1"
                                     />
                                     <label
                                       class="custom-control-label"
-                                      for="c3"
+                                      for="customCheck1"
                                     ></label>
                                   </div>
                                 </form>
                               </th>
-                              <td>
-                                <a class="text-primary" href=""> ComPro1 </a>
-                              </td>
+                              <td>All</td>
                               <td>Distributor</td>
                               <td>Super distributor</td>
-                              <td>Haryana</td>
-                              <td>Normal</td>
-                              <td>
-                                <select id="inputState" class="form-control">
-                                  <option selected>3</option>
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                </select>
-                              </td>
-                              <td>
-                                24-04-2019 <br />
-                                09:10:17
-                              </td>
+                              <td>AUT16056</td>
+                              <td>Postpaid subscriber</td>
+                              <td>All (All)</td>
+                              <td>Postpaid bill payment</td>
+                              <td>Postpaid</td>
+                              <td>neo1</td>
                               <td class="text-success">Active</td>
                               <td>
                                 <div class="action-icons">
                                   <a class="light-text mr-2" href="">
                                     <i class="fal fa-edit"></i>
                                   </a>
-                                  <a class="light-text mr-2" href="">
-                                    <i class="fal fa-cog"></i>
-                                  </a>
-                                  <a class="light-text mr-2" href="">
-                                    <i class="fal fa-ban"></i>
-                                  </a>
+
                                   <a class="light-text mr-2" href="">
                                     <i class="fal fa-trash-alt"></i>
                                   </a>
@@ -664,46 +590,31 @@
                                     <input
                                       type="checkbox"
                                       class="custom-control-input"
-                                      id="c4"
+                                      id="customCheck1"
                                     />
                                     <label
                                       class="custom-control-label"
-                                      for="c4"
+                                      for="customCheck1"
                                     ></label>
                                   </div>
                                 </form>
                               </th>
-                              <td>
-                                <a class="text-primary" href=""> ComPro1 </a>
-                              </td>
+                              <td>All</td>
                               <td>Distributor</td>
                               <td>Super distributor</td>
-                              <td>Haryana</td>
-                              <td>Normal</td>
-                              <td>
-                                <select id="inputState" class="form-control">
-                                  <option selected>3</option>
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                </select>
-                              </td>
-                              <td>
-                                24-04-2019 <br />
-                                09:10:17
-                              </td>
+                              <td>AUT16056</td>
+                              <td>Postpaid subscriber</td>
+                              <td>All (All)</td>
+                              <td>Postpaid bill payment</td>
+                              <td>Postpaid</td>
+                              <td>neo1</td>
                               <td class="text-success">Active</td>
                               <td>
                                 <div class="action-icons">
                                   <a class="light-text mr-2" href="">
                                     <i class="fal fa-edit"></i>
                                   </a>
-                                  <a class="light-text mr-2" href="">
-                                    <i class="fal fa-cog"></i>
-                                  </a>
-                                  <a class="light-text mr-2" href="">
-                                    <i class="fal fa-ban"></i>
-                                  </a>
+
                                   <a class="light-text mr-2" href="">
                                     <i class="fal fa-trash-alt"></i>
                                   </a>
@@ -717,46 +628,31 @@
                                     <input
                                       type="checkbox"
                                       class="custom-control-input"
-                                      id="c5"
+                                      id="customCheck1"
                                     />
                                     <label
                                       class="custom-control-label"
-                                      for="c5"
+                                      for="customCheck1"
                                     ></label>
                                   </div>
                                 </form>
                               </th>
-                              <td>
-                                <a class="text-primary" href=""> ComPro1 </a>
-                              </td>
+                              <td>All</td>
                               <td>Distributor</td>
                               <td>Super distributor</td>
-                              <td>Haryana</td>
-                              <td>Normal</td>
-                              <td>
-                                <select id="inputState" class="form-control">
-                                  <option selected>3</option>
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                </select>
-                              </td>
-                              <td>
-                                24-04-2019 <br />
-                                09:10:17
-                              </td>
+                              <td>AUT16056</td>
+                              <td>Postpaid subscriber</td>
+                              <td>All (All)</td>
+                              <td>Postpaid bill payment</td>
+                              <td>Postpaid</td>
+                              <td>neo1</td>
                               <td class="text-success">Active</td>
                               <td>
                                 <div class="action-icons">
                                   <a class="light-text mr-2" href="">
                                     <i class="fal fa-edit"></i>
                                   </a>
-                                  <a class="light-text mr-2" href="">
-                                    <i class="fal fa-cog"></i>
-                                  </a>
-                                  <a class="light-text mr-2" href="">
-                                    <i class="fal fa-ban"></i>
-                                  </a>
+
                                   <a class="light-text mr-2" href="">
                                     <i class="fal fa-trash-alt"></i>
                                   </a>
@@ -770,46 +666,31 @@
                                     <input
                                       type="checkbox"
                                       class="custom-control-input"
-                                      id="c6"
+                                      id="customCheck1"
                                     />
                                     <label
                                       class="custom-control-label"
-                                      for="c6"
+                                      for="customCheck1"
                                     ></label>
                                   </div>
                                 </form>
                               </th>
-                              <td>
-                                <a class="text-primary" href=""> ComPro1 </a>
-                              </td>
+                              <td>All</td>
                               <td>Distributor</td>
                               <td>Super distributor</td>
-                              <td>Haryana</td>
-                              <td>Normal</td>
-                              <td>
-                                <select id="inputState" class="form-control">
-                                  <option selected>3</option>
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                </select>
-                              </td>
-                              <td>
-                                24-04-2019 <br />
-                                09:10:17
-                              </td>
+                              <td>AUT16056</td>
+                              <td>Postpaid subscriber</td>
+                              <td>All (All)</td>
+                              <td>Postpaid bill payment</td>
+                              <td>Postpaid</td>
+                              <td>neo1</td>
                               <td class="text-success">Active</td>
                               <td>
                                 <div class="action-icons">
                                   <a class="light-text mr-2" href="">
                                     <i class="fal fa-edit"></i>
                                   </a>
-                                  <a class="light-text mr-2" href="">
-                                    <i class="fal fa-cog"></i>
-                                  </a>
-                                  <a class="light-text mr-2" href="">
-                                    <i class="fal fa-ban"></i>
-                                  </a>
+
                                   <a class="light-text mr-2" href="">
                                     <i class="fal fa-trash-alt"></i>
                                   </a>
@@ -920,38 +801,6 @@
                 >
                   <h4 class="mb-4">Commission Profile</h4>
                   <div class="card mb-4">
-                    <div class="d-flex justify-content-between px-3 py-3">
-                      <ul
-                        class="nav nav-tabs comission-profile-first-toggle mb-1"
-                        id="myTab"
-                        role="tablist"
-                      >
-                        <li class="nav-item">
-                          <a
-                            class="nav-link active mr-1"
-                            id="single-operation-tab"
-                            data-toggle="tab"
-                            href="#add"
-                            role="tab"
-                            aria-controls="single-operation"
-                            aria-selected="true"
-                            >Add</a
-                          >
-                        </li>
-                        <li class="nav-item">
-                          <a
-                            class="nav-link"
-                            id="bulk-operation-tab"
-                            data-toggle="tab"
-                            href="#modify"
-                            role="tab"
-                            aria-controls="bulk-operation"
-                            aria-selected="false"
-                            >Modify</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
                     <div class="card-body">
                       <form class="comission-profile-filter-form" action="">
                         <div class="form-row">
@@ -963,25 +812,6 @@
                               class="form-control"
                               placeholder="Search by Profile name"
                             />
-                          </div>
-                          <div class="form-group col-lg-2 col-md-4 col-sm-12">
-                            <label for="inputState">Domain</label>
-                            <select id="inputState" class="form-control">
-                              <option selected>All</option>
-                              <option>One</option>
-                              <option>Two</option>
-                              <option>Three</option>
-                            </select>
-                          </div>
-
-                          <div class="form-group col-lg-2 col-md-4 col-sm-12">
-                            <label for="inputState">Category</label>
-                            <select id="inputState" class="form-control">
-                              <option selected>All</option>
-                              <option>One</option>
-                              <option>Two</option>
-                              <option>Three</option>
-                            </select>
                           </div>
                         </div>
                         <div class="upload-image mt-4">
