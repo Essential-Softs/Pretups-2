@@ -6189,10 +6189,14 @@ Home CSS  Starts
 .white-icn-btn {
   color: #000;
   background-color: #fff;
-  border-radius: 8px px;
+  border-radius: 8px;
   padding: 5px 10px;
   font-size: 20px;
   border: 1px solid #f7f7f7;
+  -webkit-border-radius: 8px px;
+  -moz-border-radius: 8px px;
+  -ms-border-radius: 8px px;
+  -o-border-radius: 8px px;
 }
 
 .white-icn-btn:hover {
@@ -6294,7 +6298,7 @@ Home CSS  Starts
 .dashboard-media {
   background-color: #fff;
   border-radius: 8px;
-  padding: 20px 25px;
+  padding: 20px 10px;
   margin-bottom: 30px;
 }
 .dashboard-media h5 {
@@ -6311,8 +6315,8 @@ Home CSS  Starts
 .icon-background {
   border-radius: 50%;
   background-color: #f9fafb;
-  padding: 20px;
-  font-size: 35px;
+  padding: 18px;
+  font-size: 32px;
 }
 
 .sky-blue-color {
@@ -6366,8 +6370,9 @@ Home CSS  Starts
 .link-div-adj {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 20px 10px;
   font-size: 18px;
+  align-items: center;
 }
 
 .reports {
