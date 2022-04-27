@@ -328,7 +328,7 @@ Copyright (c) 2015 Daniel Eden
   color: #ffffff;
   transition: all 150ms linear;
 }
-.navbar-nav{
+.navbar-nav {
   align-items: center;
 }
 .btn:hover,
@@ -2848,7 +2848,7 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
   color: #66615b;
 }
 .user-logo {
-  font-size: 16px;  
+  font-size: 16px;
   line-height: 35px;
   text-align: center;
   width: 35px;
@@ -2858,8 +2858,6 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
   background-color: #212b35;
 }
 
-
-}
 .help::after {
   position: absolute;
   right: 0;
@@ -2883,7 +2881,9 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
   display: flex;
   align-items: center;
 }
-.nav-item.btn-rotate.dropdown:first-child{border-right: 1px solid #DFE3E8;}
+.nav-item.btn-rotate.dropdown:first-child {
+  border-right: 1px solid #dfe3e8;
+}
 .navbar.navbar-transparent .nav-item.active .nav-link:not(.btn),
 .navbar.navbar-transparent .nav-item .nav-link:not(.btn):focus,
 .navbar.navbar-transparent .nav-item .nav-link:not(.btn):hover,
@@ -4317,42 +4317,42 @@ License - nucleoapp.com/license/
   z-index: 4;
   padding-bottom: 100px;
 }
-.sidebar-wrapper .sidenav-items{
+.sidebar-wrapper .sidenav-items {
   height: 70vh;
   overflow-y: scroll;
 }
 .sidebar-wrapper .sidenav-items::-webkit-scrollbar {
   display: none;
 }
-.sidebar-wrapper .dropdown-toggle{
-  white-space: normal!important; 
+.sidebar-wrapper .dropdown-toggle {
+  white-space: normal !important;
 }
-.sidenav-submenu li a i{ 
-  font-size: 10px!important; 
+.sidenav-submenu li a i {
+  font-size: 10px !important;
 }
-.sidenav-items li.active{
+.sidenav-items li.active {
   background-color: #f9fafb1a;
   border-left: 4px solid #e50029;
 }
-.sidebar-wrapper .dropdown-toggle i::before{
-  height: 20px!important;
-  display: inline-block!important;
+.sidebar-wrapper .dropdown-toggle i::before {
+  height: 20px !important;
+  display: inline-block !important;
 }
-.sidebar-wrapper a i::before{
-  height: 40px!important;
-  display: inline-block!important;
+.sidebar-wrapper a i::before {
+  height: 40px !important;
+  display: inline-block !important;
 }
-.sidenav-bottom-area{
+.sidenav-bottom-area {
   position: fixed;
   bottom: 0;
   padding: 0 30px;
 }
-.sidenav-bottom-area a i::before{
-  height: 10px!important;
+.sidenav-bottom-area a i::before {
+  height: 10px !important;
 }
-.sidenav-bottom-area .btn{
-  background-color: #e80011!important;
-  color: #fff!important;
+.sidenav-bottom-area .btn {
+  background-color: #e80011 !important;
+  color: #fff !important;
   border-radius: 16px;
   -webkit-border-radius: 16px;
   -moz-border-radius: 16px;
@@ -4414,7 +4414,7 @@ License - nucleoapp.com/license/
   text-transform: uppercase;
   cursor: pointer;
   font-size: 12px;
-  padding: 10px 8px;
+  padding: 10px 35px 10px 8px;
   line-height: 30px;
   opacity: 0.7;
 }
@@ -4531,7 +4531,7 @@ License - nucleoapp.com/license/
   line-height: 30px;
   overflow: hidden;
 }
-sup{
+sup {
   font-size: 13px;
   position: relative;
   top: -10px;
@@ -5023,7 +5023,7 @@ sup{
   padding: 0 30px 30px;
   min-height: calc(100vh - px);
   height: 500vh;
-  margin-top: 93px;
+  margin-top: 86px;
 }
 .main-panel > .navbar {
   margin-bottom: 0;
@@ -5071,7 +5071,7 @@ sup{
 
 .footer {
   padding-top: 100px;
-  background-image: url('../img/footer-bg.png');
+  background-image: url("../img/footer-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -6291,7 +6291,7 @@ Home CSS  Starts
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
-  margin: 30px 0px;
+  margin: 20px 0px;
   color: #333333;
 }
 
@@ -6305,12 +6305,12 @@ Home CSS  Starts
   font-size: 15px;
   font-weight: 600;
 }
-  /* Other Actions Area */
-  .action-box{
-    display: flex;
-    justify-content: space-between;
-    background: #fff;
-    padding: 20px;
+/* Other Actions Area */
+.action-box {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding: 20px;
 }
 .icon-background {
   border-radius: 50%;
@@ -6382,12 +6382,12 @@ Home CSS  Starts
   color: #181818;
   mix-blend-mode: normal;
   opacity: 0.9;
-} 
+}
 
 .sidebar-dropdowns {
   font-size: 12px !important;
 }
-.sidebar-dropdowns i::before{
+.sidebar-dropdowns i::before {
   height: 20px;
   display: inline-block;
 }
@@ -6600,14 +6600,14 @@ Content CSS  Ends
 ***************************
 ****************************/
 @media screen and (max-width: 991px) {
-  .navbar-collapse.justify-content-end.collapse.show .navbar-nav{
-    flex-direction: row!important;
-    justify-content: center!important;
-}
-.navbar-collapse.justify-content-end.collapse.show .navbar-nav a{
-  display: flex;
-  align-items: center;
-}
+  .navbar-collapse.justify-content-end.collapse.show .navbar-nav {
+    flex-direction: row !important;
+    justify-content: center !important;
+  }
+  .navbar-collapse.justify-content-end.collapse.show .navbar-nav a {
+    display: flex;
+    align-items: center;
+  }
 }
 @media screen and (max-width: 768px) {
   .card-stats [class*="col-"] .statistics::after {
