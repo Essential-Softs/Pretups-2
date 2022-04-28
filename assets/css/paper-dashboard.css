@@ -6596,6 +6596,7 @@ Comission Profile CSS  Starts
 .file-upload {
   background-color: #ffffff;
   width: 267px;
+  max-width: 100%;
 }
 
 .file-upload h5 {
