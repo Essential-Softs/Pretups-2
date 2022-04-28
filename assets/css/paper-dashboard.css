@@ -2168,10 +2168,12 @@ h6 {
 
 a {
   color: #51cbce;
+  text-decoration: none;
 }
 a:hover,
 a:focus {
   color: #51cbce;
+  text-decoration: none;
 }
 
 h1,
@@ -2766,7 +2768,7 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
 .navbar .navbar-nav .nav-link {
   text-transform: uppercase;
   font-size: 0.7142em;
-  padding: 0.2rem 0.7rem;
+  padding: 0px 0.7rem !important;
   line-height: 1.625rem;
   margin-right: 3px;
 }
@@ -2848,9 +2850,10 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
   height: 35px;
   color: #fff;
   background-color: #212b35;
+  margin-right: 0 !important;
 }
 
-.help::after {
+/* .help::after {
   position: absolute;
   right: 0;
   top: 29.67%;
@@ -2858,7 +2861,7 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
   bottom: 21.67%;
   content: "";
   border: 1px solid #dfe3e8;
-}
+} */
 
 .navbar.navbar-transparent a:not(.dropdown-item):not(.btn).disabled {
   opacity: 0.5;
@@ -3557,7 +3560,6 @@ img {
 .img-raised {
   box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
 }
-
 
 /*------------------------
 	base class definition
@@ -4333,6 +4335,9 @@ img {
   -moz-border-radius: 16px;
   -ms-border-radius: 16px;
   -o-border-radius: 16px;
+}
+.sidenav-bottom-area p{
+  font-size: 11px;
 }
 .sidebar .sidebar-wrapper .dropdown .dropdown-backdrop,
 .off-canvas-sidebar .sidebar-wrapper .dropdown .dropdown-backdrop {
@@ -5376,7 +5381,7 @@ sup {
     box-shadow 200ms ease;
 }
 .card .card-body {
-  padding: 15px 15px 10px 15px;
+  padding: 15px 25px 10px 25px;
 }
 .card .card-body.table-full-width {
   padding-left: 0;
@@ -5617,6 +5622,9 @@ sup {
 @media screen and (max-width: 991px) {
   .navbar {
     padding: 0;
+  }
+  .pagination {
+    justify-content: center;
   }
   .navbar.navbar-absolute {
     padding-top: 0;
@@ -6108,6 +6116,8 @@ Content CSS  Starts
   background-color: #ffebed;
 }
 
+
+
 /* ************************
 *************************** 
 Home CSS  Starts
@@ -6269,8 +6279,8 @@ Home CSS  Starts
   margin: 20px 0px;
   color: #333333;
 }
-.bootstrap-select > .dropdown-toggle{
-  margin: 0!important;
+.bootstrap-select > .dropdown-toggle {
+  margin: 0 !important;
 }
 .dashboard-media {
   background-color: #fff;
@@ -6574,6 +6584,268 @@ h4 {
   color: #e50029;
 }
 
+.carousel-indicators {
+  margin-bottom: 0;
+}
+
+/* ************************
+*************************** 
+Comission Profile CSS  Starts
+***************************
+****************************/
+.file-upload {
+  background-color: #ffffff;
+  width: 267px;
+}
+
+.file-upload h5 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #454f5b;
+}
+
+.upload-image p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #919eab;
+}
+
+.file-upload-content {
+  display: none;
+  text-align: center;
+}
+
+.file-upload-input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.image-upload-wrap {
+  margin-top: 0px;
+  background: #fbfbfb;
+  border: 1px dashed #c6cbd4;
+  box-sizing: border-box;
+  border-radius: 2px;
+  position: relative;
+  padding: 16px 0px;
+}
+
+.image-title-wrap {
+  padding: 0 15px 15px 15px;
+  color: #222;
+}
+
+.drag-text {
+  text-align: center;
+}
+
+.drag-text h4 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  color: #181818;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+.drag-text h3 {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #e8001f;
+  margin-bottom: 0;
+}
+
+.file-upload-image {
+  max-height: 200px;
+  max-width: 200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.remove-image {
+  width: 200px;
+  margin: 0;
+  color: #fff;
+  background: #cd4535;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid #b02818;
+  transition: all 0.2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.remove-image:hover {
+  background: #c13b2a;
+  color: #ffffff;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.remove-image:active {
+  border: 0;
+  transition: all 0.2s ease;
+}
+
+/* ************************
+*************************** 
+Transfer Control Profile CSS  Starts
+***************************
+****************************/
+
+.form-buttons {
+  float: right;
+  margin-top: 20px;
+}
+
+/* ************************
+*************************** 
+Operator User CSS  Starts
+***************************
+****************************/
+.operator-btn-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.operator-btn{
+  background-color: #e50029;
+  display: inline-block;
+  padding: 9px 21px;
+  border-radius: 50px;
+}
+.operator-btn a{
+  color: #fff!important;
+  font-weight: bold;
+}
+.operator-btn span{
+  color: #F96982F4;
+  font-weight: bold;
+}
+
+.ch-form-operator select {
+  background: #ffffff !important;
+  border: 1px solid #dbdbdb !important;
+  border-radius: 21px !important;
+  padding: 10px 10px !important;
+}
+
+.ch-operator-search {
+  padding: 20px 40px !important;
+}
+
+.ch-operator-table .ch-operator-th {
+  width: 11% !important;
+}
+
+.ch-operator-table thead tr th:last-child {
+  text-align: end;
+}
+
+.ch-operator-table tbody tr td:last-child {
+  text-align: end;
+}
+
+/* ************************
+*************************** 
+Channel User CSS  Starts
+***************************
+****************************/
+
+.ch-channel-search {
+  padding: 20px 12px !important;
+}
+
+.ch-channel-table .ch-channel-th {
+  width: 15% !important;
+}
+
+.ch-channel-table thead tr th:last-child {
+  text-align: end;
+}
+
+.ch-channel-table tbody tr td:last-child {
+  text-align: end;
+}
+
+.table-container {
+  overflow: auto;
+}
+
+.table-container table {
+  width: 1530px;
+  overflow: scroll;
+}
+
+/* ************************
+*************************** 
+Approval Operator User CSS  Starts
+***************************
+****************************/
+
+.ch-approval-operator-table .ch-approval-th {
+  width: 10% !important;
+}
+
+.ch-approval-operator-table thead tr th:last-child,
+.ch-approval-operator-table thead tr th:nth-last-child(2) {
+  text-align: end;
+}
+
+.ch-approval-operator-table tbody tr td:last-child,
+.ch-approval-operator-table tbody tr td:nth-last-child(2) {
+  text-align: end;
+  font-weight: 700;
+}
+
+.ch-approval-btns {
+  border: none !important;
+}
+
+.ch-approval-btns .nav-link {
+  background: #ffffff;
+  box-shadow: 0px 4px 6px rgba(226, 230, 245, 0.8);
+  border-radius: 4px;
+}
+
+.ch-approval-btns .nav-link.active,
+.ch-approval-btns .nav-item.show .nav-link {
+  background: #ffbe45 !important;
+  box-shadow: 0px 4px 6px rgba(226, 230, 245, 0.801461) !important;
+  border-radius: 4px !important;
+  border: none !important;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.pagination {
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 991px) {
+  .pagination {
+    margin-top: 0px;
+  }
+}
+
 /* ************************
 *************************** 
 Content CSS  Ends
@@ -6592,6 +6864,9 @@ Content CSS  Ends
 @media screen and (max-width: 768px) {
   .card-stats [class*="col-"] .statistics::after {
     display: none;
+  }
+  .comission-profile-first-toggle {
+    margin: auto;
   }
   .main-panel .content {
     padding-left: 15px;
@@ -6612,21 +6887,20 @@ Content CSS  Ends
 }
 
 @media screen and (max-width: 767px) {
-  .link-div-adj-border-right{
+  .link-div-adj-border-right {
     border-right: none;
   }
-  .link-div-adj{
+  .link-div-adj {
     border-bottom: 1px solid #eef0f7;
     padding-left: 0;
   }
-  .content-top-nav{
+  .content-top-nav {
     margin-right: auto;
-
   }
-  .content-top-nav ul{
-
+  .content-top-nav ul {
+    padding-left: 10px;
   }
-  .link-div-adj-last{
+  .link-div-adj-last {
     border-bottom: none;
     padding-bottom: 15px;
   }
@@ -6708,5 +6982,12 @@ Content CSS  Ends
     padding: 15px;
   }
 }
-
+@media screen and (max-width: 400px) {
+  .operator-btn-box{
+    display: block;
+  }
+  .operator-btn-box h4{
+    margin-bottom: 5px;
+  }
+}
 /*# sourceMappingURL=paper-dashboard.css.map */
