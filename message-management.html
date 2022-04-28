@@ -19,8 +19,8 @@
   <link href="./assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="./assets/demo/demo.css" rel="stylesheet" />
-  <link href="assets/css/ahmad.css" rel="stylesheet" />
-  <link href="assets/css/aliasif.css" rel="stylesheet" />
+  <link href="/assets/css/ahmad.css" rel="stylesheet" />
+  <link href="/assets/css/aliasif.css" rel="stylesheet" />
 </head>
 
 <body class="">
@@ -172,7 +172,7 @@
                 </a>
               </li>
               <li>
-                <a href="association-reassociation.html" class="sidebar-dropdowns"><i class="fal fa-circle"></i>Assocition/Reassociation</a>
+                <a href="association-reassociation.html" class="sidebar-dropdowns"><i class="fal fa-circle"></i>Assocition / Reassociation</a>
               </li>
             </ul>
           </li>
@@ -225,203 +225,110 @@
       </nav>
       <!-- End Navbar -->
       <div class="content">
-        
         <div class="row comission">
-          <p class="ml-3">Service Group Management</p>
+          <h4 class="mb-4">
+            Message Management
+          </h4>
           <div class="content-top-nav ml-auto">
             <ul class="top-nav-ul">
               <li class="t-line">Network: <span>Bangalore</span></li>
               <li>23/08/2022, 12:03:00 AM</li>
             </ul>
           </div>
-
           <div class="col-12">
-            <div class="card">
-              <div>
-                <div class="row py-4 mb-3">
-                  <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="input-group has-search ml-0 ml-md-4">
-                      <div class="input-group-prepend">
-                        <div class="input-group-text">
-                          <i class="fal fa-search"></i>
+            <ul class="nav nav-tabs comission-profile-first-toggle mb-3" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active mr-1" id="single-operation-tab" data-toggle="tab" href="#single-operation"
+                  role="tab" aria-controls="single-operation" aria-selected="true">Single</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="bulk-operation-tab" data-toggle="tab" href="#bulk-operation" role="tab"
+                  aria-controls="bulk-operation" aria-selected="false">Bulk</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12">
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="single-operation" role="tabpanel" aria-labelledby="single-operation-tab">
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <h4 class="mb-3">
+                      Manage Single List
+                    </h4>
+                    <form class="comission-profile-filter-form" action="">
+                      <div class="form-group">
+                        <div class="row">
+                          <div class="col-lg-3 col-md-6 col-sm-12 ">
+                            <label for="">Message Code</label>
+                            <input type="text" class="form-control">
+                          </div>
                         </div>
                       </div>
-                      <input type="text" class="form-control" placeholder="Search by Profile name" />
-                      <div class="input-group-append">
-                       
-                      </div>
-                    </div>
-                  </div>
-                  <div class=" col-lg-3 col-md-6 col-sm-12">
-                    <a class="btn ml-4 mt-0" href=""><i class="fal fa-plus-circle mr-2"></i>ADD
-                      PROFILE</a>
-                  </div>
-                </div>
-                <div class="table-container">
-                  <table class="table mb-5">
-                    <thead>
-                      <tr>
-                        <th class="border-top-0 border-bottom-0" scope="col">
-                          Group Name
-                        </th>
-                        <th class="border-top-0 border-bottom-0" scope="col">
-                          Group code
-                        </th>
-                        <th class="border-top-0 border-bottom-0" scope="col">
-                          Status
-                        </th>
-                        <th class="border-top-0 border-bottom-0" scope="col">
-                          Action
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>New</td>
-                        <td>NW1</td>
-                        <td>Active</td>
-                        <td>
-                          <div class="action-icons">
-                            <a class="light-text mr-2" href="">
-                              <i class="fal fa-edit"></i>
-                            </a>
-                            <a class="light-text mr-2" href="">
-                              <i class="fal fa-trash-alt"></i>
-                            </a>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>New</td>
-                        <td>NW1</td>
-                        <td>Active</td>
-                        <td>
-                          <div class="action-icons">
-                            <a class="light-text mr-2" href="">
-                              <i class="fal fa-edit"></i>
-                            </a>
-                            <a class="light-text mr-2" href="">
-                              <i class="fal fa-trash-alt"></i>
-                            </a>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>New</td>
-                        <td>NW1</td>
-                        <td>Active</td>
-                        <td>
-                          <div class="action-icons">
-                            <a class="light-text mr-2" href="">
-                              <i class="fal fa-edit"></i>
-                            </a>
-                            <a class="light-text mr-2" href="">
-                              <i class="fal fa-trash-alt"></i>
-                            </a>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>New</td>
-                        <td>NW1</td>
-                        <td>Active</td>
-                        <td>
-                          <div class="action-icons">
-                            <a class="light-text mr-2" href="">
-                              <i class="fal fa-edit"></i>
-                            </a>
-                            <a class="light-text mr-2" href="">
-                              <i class="fal fa-trash-alt"></i>
-                            </a>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>New</td>
-                        <td>NW1</td>
-                        <td>Active</td>
-                        <td>
-                          <div class="action-icons">
-                            <a class="light-text mr-2" href="">
-                              <i class="fal fa-edit"></i>
-                            </a>
-                            <a class="light-text mr-2" href="">
-                              <i class="fal fa-trash-alt"></i>
-                            </a>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>New</td>
-                        <td>NW1</td>
-                        <td>Active</td>
-                        <td>
-                          <div class="action-icons">
-                            <a class="light-text mr-2" href="">
-                              <i class="fal fa-edit"></i>
-                            </a>
-                            <a class="light-text mr-2" href="">
-                              <i class="fal fa-trash-alt"></i>
-                            </a>
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="row mb-5 px-4">
-                  <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12">
-                    <form class="ml-4 mt-1" action="">
-                      <div class="form-groug d-flex pagination-entries">
-                        <label for="inputPassword" class="col-form-label mr-3 rounded-left">Show</label>
-                        <input type="number" class="form-control mr-3" id="entery" placeholder="10" value="10" />
-                        <p class="mt-2">Entries</p>
+                      <div class="d-flex justify-content-end">
+                        <button type="reset" class="btn btn-reset mr-2">
+                          Reset
+                        </button>
+                        <button type="submit" class="btn btn-light-secondary">
+                          Proceed
+                        </button>
                       </div>
                     </form>
                   </div>
-                  <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12">
-                    <div class="ch-pagination d-lg-flex d-block float-lg-right float-none mr-4">
-                      <nav aria-label="Page navigation example" class="mr-2">
-                        <ul class="pagination">
-                          <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Previous">
-                              <span aria-hidden="true">&laquo;</span>
-                            </a>
-                          </li>
-                          <li class="page-item">
-                            <a class="page-link" href="#">1</a>
-                          </li>
-                          <li class="page-item">
-                            <a class="page-link" href="#">2</a>
-                          </li>
-                          <li class="page-item">
-                            <a class="page-link" href="#">...</a>
-                          </li>
-                          <li class="page-item">
-                            <a class="page-link" href="#">25</a>
-                          </li>
-                          <li class="page-item">
-                            <a class="page-link" href="#">78</a>
-                          </li>
-                          <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                              <span aria-hidden="true">&raquo;</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </nav>
-                      <div class="input-pagination">
-                        <form action="">
-                          <div class="form-group d-flex">
-                            <label for="inputPassword" class="col-form-label mr-2">Go to page</label>
-                            <input type="text" class="form-control mr-3 w-25" id="entery" placeholder="10" value="10" />
-                            <a href="">
-                              Go <i class="fal fa-angle-right"></i>
-                            </a>
+                </div>
+                <div class="card mb-4">
+                  <div class="card-body">
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="bulk-operation" role="tabpanel" aria-labelledby="bulk-operation-tab">
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <h4 class="mb-3">
+                      Upload Bulk Message List
+                    </h4>
+                    <form class="comission-profile-filter-form" action="">
+                      <div class="upload-image mt-4">
+                        <a href="#download" class="download-template"><i
+                            class="fal fa-arrow-to-bottom download-icon mr-2"></i>
+                          Download Message List</a>
+                        <div class="file-upload mt-4">
+                          <h5>Upload file</h5>
+                          <div class="image-upload-wrap">
+                            <input class="file-upload-input" type="file" id="inputState" onchange="readURL(this);"
+                              accept="image/*" />
+                            <div class="drag-text">
+                              <h4>
+                                Drag and drop a file or select add Image
+                              </h4>
+                              <h3>Choose</h3>
+                            </div>
                           </div>
-                        </form>
+                          <div class="file-upload-content">
+                            <img class="file-upload-image" src="#" alt="your image" />
+                            <div class="image-title-wrap">
+                              <button type="button" onclick="removeUpload()" class="remove-image">
+                                Remove
+                                <span class="image-title">Uploaded Image</span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="mt-2">
+                          (You can upload file upto 2MB in XML, XLS, CSV
+                          format)
+                        </p>
                       </div>
-                    </div>
+                      <div class="d-flex justify-content-end">
+                        <button type="reset" class="btn btn-reset mr-2">
+                          Reset
+                        </button>
+                        <button type="submit" class="btn btn-light-secondary">
+                          Submit
+                        </button>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>

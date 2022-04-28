@@ -187,3 +187,13 @@
   outline: none;
   display: none;
 }
+/* Changings by Saad Ahmad */
+.sidebar .nav li > a, .off-canvas-sidebar .nav li > a {
+  text-transform: none;
+}
+.sidebar .nav, .off-canvas-sidebar .nav {
+  margin-top: 20px;
+  display: block;
+  height: 100%;
+  overflow-y: scroll;
+}
