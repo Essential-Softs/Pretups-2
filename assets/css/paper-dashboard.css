@@ -4295,7 +4295,7 @@ img {
   padding-bottom: 100px;
 }
 .sidebar-wrapper .sidenav-items {
-  height: 70vh;
+  height: 100%;
   overflow-y: scroll;
 }
 .sidebar-wrapper .sidenav-items::-webkit-scrollbar {
@@ -4336,7 +4336,7 @@ img {
   -ms-border-radius: 16px;
   -o-border-radius: 16px;
 }
-.sidenav-bottom-area p{
+.sidenav-bottom-area p {
   font-size: 11px;
 }
 .sidebar .sidebar-wrapper .dropdown .dropdown-backdrop,
@@ -4386,7 +4386,7 @@ img {
 }
 .sidebar .nav li > a,
 .off-canvas-sidebar .nav li > a {
-  margin: 10px 30px 0 15px;
+  margin: 0px 30px 0 15px;
   color: #ffffff;
   display: block;
   text-decoration: none;
@@ -4394,7 +4394,7 @@ img {
   text-transform: uppercase;
   cursor: pointer;
   font-size: 12px;
-  padding: 10px 35px 10px 8px;
+  padding: 20px 30px 20px 4px;
   line-height: 30px;
   opacity: 0.7;
 }
@@ -6116,8 +6116,6 @@ Content CSS  Starts
   background-color: #ffebed;
 }
 
-
-
 /* ************************
 *************************** 
 Home CSS  Starts
@@ -6719,24 +6717,24 @@ Transfer Control Profile CSS  Starts
 Operator User CSS  Starts
 ***************************
 ****************************/
-.operator-btn-box{
+.operator-btn-box {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
 }
-.operator-btn{
+.operator-btn {
   background-color: #e50029;
   display: inline-block;
   padding: 9px 21px;
   border-radius: 50px;
 }
-.operator-btn a{
-  color: #fff!important;
+.operator-btn a {
+  color: #fff !important;
   font-weight: bold;
 }
-.operator-btn span{
-  color: #F96982F4;
+.operator-btn span {
+  color: #f96982f4;
   font-weight: bold;
 }
 
@@ -6869,7 +6867,7 @@ Content CSS  Ends
   .comission-profile-first-toggle {
     margin: auto;
   }
-  .network-stock-toggle{
+  .network-stock-toggle {
     margin-left: unset;
   }
   .main-panel .content {
@@ -6987,11 +6985,25 @@ Content CSS  Ends
   }
 }
 @media screen and (max-width: 400px) {
-  .operator-btn-box{
+  .operator-btn-box {
     display: block;
   }
-  .operator-btn-box h4{
+  .operator-btn-box h4 {
     margin-bottom: 5px;
+  }
+  .comission .pagination-entries input {
+    width: 90px;
+  }
+  .page-link {
+    padding: 0.4rem 0.6rem;
   }
 }
 /*# sourceMappingURL=paper-dashboard.css.map */
+
+@media screen and (max-width: 350px) {
+  .nav-tabs .nav-link.active,
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link {
+    font-size: 10px;
+  }
+}
