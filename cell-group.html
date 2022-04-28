@@ -43,10 +43,7 @@
           </div>
             <p>CT</p>
           </a> -->
-          <a
-            href="index.html"
-            class="simple-text logo-normal mx-3"
-          >
+          <a href="index.html" class="simple-text logo-normal mx-3">
             PreTUPS <sup>TM</sup>
             <!-- <div class="logo-image-big">
             <img src="../assets/img/logo-big.png">
@@ -55,7 +52,7 @@
         </div>
         <div class="sidebar-wrapper">
           <ul class="nav sidenav-items">
-            <li class="active">
+            <li>
               <a href="index.html">
                 <i class="fal fa-home side-icon"></i>
                 <p>Home</p>
@@ -121,7 +118,10 @@
               </a>
               <ul class="sidenav-submenu collapse list-unstyled" id="approval1">
                 <li>
-                  <a href="approval-operator-user.html" class="sidebar-dropdowns">
+                  <a
+                    href="approval-operator-user.html"
+                    class="sidebar-dropdowns"
+                  >
                     <i class="fal fa-circle"></i> Operator User
                   </a>
                 </li>
@@ -159,6 +159,33 @@
             </li>
             <li>
               <a
+                href="#cardGroup"
+                data-toggle="collapse"
+                aria-expanded="false"
+                class="dropdown-toggle"
+                ><i class="fal fa-home side-icon"></i>
+                Card Group
+              </a>
+              <ul class="sidenav-submenu collapse list-unstyled" id="cardGroup">
+                <li>
+                  <a href="#channel-to-subs" class="sidebar-dropdowns">
+                    <i class="fal fa-circle"></i> Channel To Subscriber
+                  </a>
+                </li>
+                <li>
+                  <a href="#peer-to-peer" class="sidebar-dropdowns">
+                    <i class="fal fa-circle"></i> Peer To Peer
+                  </a>
+                </li>
+                <li>
+                  <a href="#voucher" class="sidebar-dropdowns">
+                    <i class="fal fa-circle"></i> Voucher
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
                 href="#transfer"
                 data-toggle="collapse"
                 aria-expanded="false"
@@ -180,9 +207,65 @@
                     ><i class="fal fa-circle"></i> Peer To Peer</a
                   >
                 </li>
+                <li>
+                  <a href="#channel-to-channel" class="sidebar-dropdowns"
+                    ><i class="fal fa-circle"></i> Channel To Channel</a
+                  >
+                </li>
+                <li>
+                  <a href="#operator-to-channel" class="sidebar-dropdowns"
+                    ><i class="fal fa-circle"></i> Operator To Channel</a
+                  >
+                </li>
+                <li>
+                  <a href="#promotional" class="sidebar-dropdowns"
+                    ><i class="fal fa-circle"></i> Promotional</a
+                  >
+                </li>
+                <li>
+                  <a href="#peer-to-peer-promotion" class="sidebar-dropdowns"
+                    ><i class="fal fa-circle"></i> Peer To Peer Promotion</a
+                  >
+                </li>
               </ul>
             </li>
             <li>
+              <a
+                href="#networkStock"
+                data-toggle="collapse"
+                aria-expanded="false"
+                class="dropdown-toggle"
+                ><i class="fal fa-home side-icon"></i>
+                Network Stock
+              </a>
+              <ul
+                class="sidenav-submenu collapse list-unstyled"
+                id="networkStock"
+              >
+                <li>
+                  <a href="#initiate-stock" class="sidebar-dropdowns">
+                    <i class="fal fa-circle"></i> Initiate Stock
+                  </a>
+                </li>
+                <li>
+                  <a href="#view-stock-transaction" class="sidebar-dropdowns"
+                    ><i class="fal fa-circle"></i>View stock transaction
+                  </a>
+                </li>
+                <li>
+                  <a href="#view-current-stock" class="sidebar-dropdowns"
+                    ><i class="fal fa-circle"></i>View current stock
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#interface-mapping">
+                <i class="fal fa-home side-icon"></i>
+                <p>Interface Mapping</p>
+              </a>
+            </li>
+            <li class="active">
               <a
                 href="#callManagement"
                 data-toggle="collapse"
@@ -207,9 +290,140 @@
                 </li>
               </ul>
             </li>
+            <li>
+              <a href="#message-management">
+                <i class="fal fa-home side-icon"></i>
+                <p>Message management</p>
+              </a>
+            </li>
+            <li>
+              <a href="#cos-management">
+                <i class="fal fa-home side-icon"></i>
+                <p>COS management</p>
+              </a>
+            </li>
+            <li>
+              <a href="#service-type-product-mapping">
+                <i class="fal fa-home side-icon"></i>
+                <p>Service type product mapping</p>
+              </a>
+            </li>
+            <li>
+              <a href="#network-product-mapping">
+                <i class="fal fa-home side-icon"></i>
+                <p>Network product mapping</p>
+              </a>
+            </li>
+            <li>
+              <a href="#bonus-bundle-mapping">
+                <i class="fal fa-home side-icon"></i>
+                <p>Bonus bundle mapping</p>
+              </a>
+            </li>
+            <li>
+              <a href="#stk-services">
+                <i class="fal fa-home side-icon"></i>
+                <p>STK services</p>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#serviceGroupManagement"
+                data-toggle="collapse"
+                aria-expanded="false"
+                class="dropdown-toggle"
+                ><i class="fal fa-home side-icon"></i>
+                Service Group Management
+              </a>
+              <ul
+                class="sidenav-submenu collapse list-unstyled"
+                id="serviceGroupManagement"
+              >
+                <li>
+                  <a href="manage-service-group.html" class="sidebar-dropdowns">
+                    <i class="fal fa-circle"></i> Manage service group
+                  </a>
+                </li>
+                <li>
+                  <a href="#association-reassociation" class="sidebar-dropdowns"
+                    ><i class="fal fa-circle"></i>Association/Reassociation
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="geographical-domain.html">
+                <i class="fal fa-home side-icon"></i>
+                <p>Geographical Domain</p>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#loyalty-management"
+                data-toggle="collapse"
+                aria-expanded="false"
+                class="dropdown-toggle"
+                ><i class="fal fa-home side-icon"></i>
+                Loyalty Management
+              </a>
+              <ul
+                class="sidenav-submenu collapse list-unstyled"
+                id="loyalty-management"
+              >
+                <li>
+                  <a
+                    href="loyalty-profile-management.html"
+                    class="sidebar-dropdowns"
+                  >
+                    <i class="fal fa-circle"></i> Profile management
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="loyalty-administration.html"
+                    class="sidebar-dropdowns"
+                    ><i class="fal fa-circle"></i>Loyalty administration
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                href="#preferences"
+                data-toggle="collapse"
+                aria-expanded="false"
+                class="dropdown-toggle"
+                ><i class="fal fa-home side-icon"></i>
+                Preferences
+              </a>
+              <ul
+                class="sidenav-submenu collapse list-unstyled"
+                id="preferences"
+              >
+                <li>
+                  <a href="network-prefrence.html" class="sidebar-dropdowns">
+                    <i class="fal fa-circle"></i> Network preferences
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="service-class-prefrence.html"
+                    class="sidebar-dropdowns"
+                    ><i class="fal fa-circle"></i>Service class preferences
+                  </a>
+                </li>
+                <li>
+                  <a href="control-prefrence.html" class="sidebar-dropdowns"
+                    ><i class="fal fa-circle"></i>Control preferences
+                  </a>
+                </li>
+              </ul>
+            </li>
           </ul>
           <div class="sidenav-bottom-area">
-            <a href="#" class="btn"><i class="fal fa-question-circle mr-1"></i>SELF HELP</i></a>
+            <a href="#" class="btn"
+              ><i class="far fa-question-circle mr-2"></i>SELF HELP</a
+            >
             <p class="text-white">PreTUPS 715.01.01.01</p>
           </div>
         </div>
@@ -290,19 +504,23 @@
               <div class="card">
                 <div>
                   <div class="row py-4 mb-3">
-                    <div class="col-lg-5 col-md-6 col-sm-12">
-                      <div class="input-group has-search ml-0 ml-md-4 mt-2">
-                        <div class="input-group-prepend">
-                          <div class="input-group-text">
-                            <i class="fal fa-search"></i>
+                    <div class="col-xl-5 col-lg-7 col-md-7 col-sm-12">
+                      <div
+                        class="input-group has-search ml-0 ml-md-4 mt-2 pl-md-0 pl-4"
+                      >
+                        <div class="d-flex mr-4">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">
+                              <i class="fal fa-search"></i>
+                            </div>
                           </div>
+                          <input
+                            type="text"
+                            class="form-control ch-channel-search"
+                            placeholder="Search"
+                          />
                         </div>
-                        <input
-                          type="text"
-                          class="form-control ch-channel-search"
-                          placeholder="Search"
-                        />
-                        <a class="btn ml-3 float-right" href=""
+                        <a class="btn" href="#"
                           ><i class="fal fa-plus-circle mr-2"></i>ADD</a
                         >
                       </div>
@@ -451,10 +669,13 @@
                       </tbody>
                     </table>
                   </div>
+
                   <div class="row mb-5 px-4">
                     <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12">
-                      <form class="ml-4 mt-1" action="">
-                        <div class="form-groug d-flex pagination-entries">
+                      <form class="ml-0 ml-lg-4 mt-1" action="">
+                        <div
+                          class="form-groug d-flex justify-content-center justify-content-lg-start pagination-entries"
+                        >
                           <label
                             for="inputPassword"
                             class="col-form-label mr-3 rounded-left"
@@ -473,9 +694,12 @@
                     </div>
                     <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12">
                       <div
-                        class="ch-pagination d-lg-flex d-block float-lg-right float-none mr-4"
+                        class="ch-pagination d-lg-flex d-block float-lg-right float-none mr-0 mr-md-4"
                       >
-                        <nav aria-label="Page navigation example" class="mr-2">
+                        <nav
+                          aria-label="Page navigation example"
+                          class="mr-0 mr-lg-2"
+                        >
                           <ul class="pagination">
                             <li class="page-item">
                               <a
@@ -508,7 +732,7 @@
                             </li>
                           </ul>
                         </nav>
-                        <div class="input-pagination">
+                        <div class="input-pagination mx-auto">
                           <form action="">
                             <div class="form-group d-flex">
                               <label
