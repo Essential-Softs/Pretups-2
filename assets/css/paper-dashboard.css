@@ -6868,6 +6868,9 @@ Content CSS  Ends
   .comission-profile-first-toggle {
     margin: auto;
   }
+  .network-stock-toggle{
+    margin-left: unset;
+  }
   .main-panel .content {
     padding-left: 15px;
     padding-right: 15px;
