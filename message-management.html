@@ -21,170 +21,24 @@
   <link href="./assets/demo/demo.css" rel="stylesheet" />
   <link href="/assets/css/ahmad.css" rel="stylesheet" />
   <link href="/assets/css/aliasif.css" rel="stylesheet" />
+    <!-- Added these scripts -->  
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+  <script>
+    $(function () {
+      $("#sidebar").load("sidebar.html");
+    });
+  </script>
+  <!-- Added these scripts -->
 </head>
 
 <body class="">
   <div class="wrapper">
-    <div class="sidebar" data-color="white" data-active-color="danger">
-      <div class="logo">
-        <!-- <a href="https://www.creative-tim.com" class="simple-text logo-mini">
-            <div class="logo-image-small">
-            <img src="./assets/img/logo-small.png">
-          </div>
-            <p>CT</p>
-          </a> -->
-        <a href="https://www.creative-tim.com" class="simple-text logo-normal mx-3">
-          PreTUPS <sup>TM</sup>
-          <!-- <div class="logo-image-big">
-            <img src="../assets/img/logo-big.png">
-          </div> -->
-        </a>
-      </div>
-      <div class="sidebar-wrapper">
-        <ul class="nav">
-          <li class="active">
-            <a href="index.html">
-              <i class="fal fa-home side-icon"></i>
-              <p>Home</p>
-            </a>
-          </li>
-
-          <li>
-            <a href="#profile" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
-                class="fal fa-home side-icon"></i>
-              <p class="mb-1">Profile</p>
-              <p class="ml-45">Management</p>
-            </a>
-            <ul class="collapse list-unstyled" id="profile">
-              <li>
-                <a href="comission-profile.html" class="sidebar-dropdowns"><i class="fal fa-circle"></i> Commission
-                  Profile
-                </a>
-              </li>
-              <li>
-                <a href="transfer-control-profile.html" class="sidebar-dropdowns"><i class="fal fa-circle"></i> Transfer
-                  Control Profile</a>
-              </li>
-              <li>
-                <a href="bulk-category-profile.html" class="sidebar-dropdowns"><i class="fal fa-circle"></i> Bulk
-                  Category-wise Default
-                  Profile</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="operator-user.html">
-              <i class="fal fa-home side-icon"></i>
-              <p>Operator User</p>
-            </a>
-          </li>
-          <li>
-            <a href="channel-user.html">
-              <i class="fal fa-home side-icon"></i>
-              <p>Channel User</p>
-            </a>
-          </li>
-          <li>
-            <a href="profile-management.html">
-              <i class="fal fa-home side-icon"></i>
-              <p>Profile Management Page</p>
-            </a>
-          </li>
-          <li>
-            <a href="#approval1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
-                class="fal fa-home side-icon"></i>
-              <p class="mb-1 pr-4">Approval Level 1</p>
-              <!-- <p class="ml-45">Management</p> -->
-            </a>
-            <ul class="collapse list-unstyled" id="approval1">
-              <li>
-                <a href="approval-operator-user.html" class="sidebar-dropdowns"><i class="fal fa-circle"></i> Operator
-                  User
-                </a>
-              </li>
-              <li>
-                <a href="network-stock.html" class="sidebar-dropdowns"><i class="fal fa-circle"></i> Network Stock</a>
-              </li>
-              <li>
-                <a href="loyalty-profile.html" class="sidebar-dropdowns"><i class="fal fa-circle"></i> Loyalty
-                  Profile</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#approval2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
-                class="fal fa-home side-icon"></i>
-              <p class="mb-1 pr-4">Approval Level 2</p>
-              <!-- <p class="ml-45">Management</p> -->
-            </a>
-            <ul class="collapse list-unstyled" id="approval2">
-              <li>
-                <a href="network-stock-approval-lvl-2.html" class="sidebar-dropdowns"><i class="fal fa-circle"></i>
-                  Network Stock
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#transfer" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
-                class="fal fa-home side-icon"></i>
-              <p class="mb-1">Transfer Rules</p>
-              <!-- <p class="ml-45">Management</p> -->
-            </a>
-            <ul class="collapse list-unstyled" id="transfer">
-              <li>
-                <a href="channel-to-subscriber.html" class="sidebar-dropdowns"><i class="fal fa-circle"></i> Channel To
-                  Subscriber
-                </a>
-              </li>
-              <li>
-                <a href="peer-to-peer.html" class="sidebar-dropdowns"><i class="fal fa-circle"></i> Peer To Peer
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#callManagement" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
-                class="fal fa-home side-icon"></i>
-              <p class="mb-1">Call ID Management</p>
-              <!-- <p class="ml-45">Management</p> -->
-            </a>
-            <ul class="collapse list-unstyled" id="callManagement">
-              <li>
-                <a href="cell-group.html" class="sidebar-dropdowns"><i class="fal fa-circle"></i> Cell Group
-                </a>
-              </li>
-              <li>
-                <a href="cell-id.html" class="sidebar-dropdowns"><i class="fal fa-circle"></i> Cell ID
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#service-group" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
-                class="fal fa-home side-icon"></i>
-              <p class="mb-1">Service Group</p>
-              <p class="ml-45">Management</p>
-            </a>
-            <ul class="collapse list-unstyled" id="service-group">
-              <li>
-                <a href="manage-service-group.html" class="sidebar-dropdowns"><i class="fal fa-circle"></i> Manage
-                  Service Group
-                </a>
-              </li>
-              <li>
-                <a href="association-reassociation.html" class="sidebar-dropdowns"><i
-                    class="fal fa-circle"></i>Assocition / Reassociation</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <div class="sidenav-bottom-area">
-          <a href="#" class="btn"><i class="fal fa-question-circle mr-1"></i>SELF HELP</i></a>
-          <p class="text-white">PreTUPS 715.01.01.01</p>
-        </div>
-      </div>
+     <!-- Added this div -->
+     <div id="sidebar">
     </div>
+  <!-- Added this div -->
     <div class="main-panel">
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
