@@ -6286,9 +6286,16 @@ Home CSS  Starts
   padding: 20px 10px;
   margin-bottom: 30px;
 }
+.dashboard-media .media-body{
+  width: 100px;
+}
 .dashboard-media h5 {
   font-size: 15px;
   font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: -webkit-fill-available;
 }
 /* Other Actions Area */
 .action-box {
@@ -6454,6 +6461,10 @@ Comission Profile CSS  Starts
   font-size: 14px;
   line-height: 24px;
   color: #454f5b;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: -webkit-fill-available;
 }
 
 h4 {
