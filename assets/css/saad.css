@@ -12,3 +12,65 @@
     padding: 30px 40px;
     margin: 20px 0px 40px 0px;
 }
+.channel-user-pink-bg{
+    background-color: #FFEDEF;
+    padding: 20px 20px 10px 20px;
+    border-radius: 9px;
+    margin: 0 5px;
+}
+.channel-user-pink-bg h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .125);
+    width: max-content;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-left: 5px!important;
+    padding-top: 0px;
+    border: none;
+    background-color: transparent;
+    border-radius: 0px;
+    border-bottom: 1px solid #DFE3E8;
+}
+
+.list-group-item:hover {
+    background-color: transparent;
+}
+
+.list-group-item.active {
+    z-index: 2;
+    /* color: #fff; */
+    /* background-color: #007bff; */
+    /* border-color: #007bff; */
+    background: transparent;
+    border-bottom: 3px solid #E50029;
+    color: #000;
+    font-weight: bold;
+}
+
+.parent-border{
+    border-right: 1px solid #E4CED0;
+}
+
+@media only screen and (max-width: 992px){
+    .parent-border{
+        border-right: 0;
+        border-bottom: 1px solid #E4CED0;
+        margin-bottom: 20px;
+    }
+}
+.view-comission-profile-outline{
+    border: 1px solid #DFE3E8;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+}
+.tbl-bg-blue{
+    background-color: #F1FBFC;
+}
