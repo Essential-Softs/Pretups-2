@@ -359,9 +359,32 @@
                       <button type="reset" class="btn btn-reset mr-2">
                         Reset
                       </button>
-                      <a class="btn btn-light-secondary text-uppercase" href="">
+                      <!-- <a class="btn btn-light-secondary text-uppercase" href="">
                         Proceed
-                      </a>
+                      </a> -->
+                      <button type="button" class="btn btn-light-secondary btn text-uppercase" data-toggle="modal" data-target="#exampleModalCenter">
+                        Proceed
+                      </button>
+                      
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content p-2">
+                            <div class="border p-2" style="border-radius: 10px;">
+                              <div class="modal-header border-bottom-0 d-block">
+                                <h4 class="text-center" style="font-size: 30px; font-weight: bold; color: green; margin-bottom: 30px;"><i class="far fa-check-circle"></i></h4>
+                                <h4 class="modal-title text-center" id="exampleModalLongTitle" style="color: #000; font-weight: bold; font-size: 25px; padding-left: 25px; padding-right: 25px;">Network Product Mapping Updated Successfully.</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="padding: 0px; margin-top: -150px; margin-right: -10px;">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-footer justify-content-center border-top-0 pt-0">
+                                <button type="button" class="btn text-center" style="padding-left: 50px; padding-right: 50px;" data-dismiss="modal">Done</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
