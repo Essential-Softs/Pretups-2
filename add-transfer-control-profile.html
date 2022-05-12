@@ -35,8 +35,8 @@
 
 <body class="">
   <div class="wrapper">
-    <!-- Added this div -->
-    <div id="sidebar">
+     <!-- Added this div -->
+     <div id="sidebar">
     </div>
   <!-- Added this div -->
     <div class="main-panel">
@@ -82,14 +82,27 @@
       <!-- End Navbar -->
       <div class="content">
         <div class="row comission">
-          <div class="content-top-nav ml-auto">
-            <ul class="top-nav-ul">
-              <li class="t-line">Network: <span>Bangalore</span></li>
-              <li>23/08/2022, 12:03:00 AM</li>
-            </ul>
+          <div class="col-12">
+            <div class="row">
+              <div class="col-lg-6 order-lg-1 order-2">
+                <div class="d-flex mb-lg-0 mb-2">
+                  <a class="text-dark" href="transfer-control-profile.html">Transfer Control Profile</a>
+                  <span class="mx-2"><i class="text-secondary fas fa-chevron-right"></i></span>
+                  <h4>Add</h4>
+                </div>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2">
+                <div class="content-top-nav text-lg-right ml-auto">
+                  <ul class="top-nav-ul">
+                    <li class="t-line">Network: <span>Bangalore</span></li>
+                    <li>23/08/2022, 12:03:00 AM</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="col-12">
-            <h4 class="mb-4">Operator User</h4>
+            <h4 class="mb-4">Transfer Control Profile</h4>
             <div class="card mb-4">
               <div class="d-flex justify-content-between px-3 py-3">
                 <h4>Filters</h4>
@@ -101,7 +114,16 @@
               <div class="collapse show" id="collapseExample">
                 <div class="card-body">
                   <form class="comission-profile-filter-form" action="">
-                    <div class="form-row">
+                    <div class="form-row align-items-end">
+                      <div class="form-group col-xl-2 col-lg-4 col-md-4 col-sm-12">
+                        <label for="inputState">Domain</label>
+                        <select id="inputState" class="form-control">
+                          <option selected>All</option>
+                          <option>One</option>
+                          <option>Two</option>
+                          <option>Three</option>
+                        </select>
+                      </div>
                       <div class="form-group col-xl-2 col-lg-4 col-md-4 col-sm-12">
                         <label for="inputState">Category</label>
                         <select id="inputState" class="form-control">
@@ -111,14 +133,26 @@
                           <option>Three</option>
                         </select>
                       </div>
-                    </div>
-                    <div class="d-flex justify-content-end">
-                      <button type="reset" class="btn btn-reset mr-2">
-                        Reset
-                      </button>
-                      <button type="submit" class="btn btn-light-secondary">
-                        Proceed
-                      </button>
+
+                      <div class="form-group col-xl-2 col-lg-4 col-md-4 col-sm-12">
+                        <label for="inputState">Status</label>
+                        <select id="inputState" class="form-control">
+                          <option selected>All</option>
+                          <option>One</option>
+                          <option>Two</option>
+                          <option>Three</option>
+                        </select>
+                      </div>
+                      <div class="col-xl-6 col-lg-4 col-md-4 col-sm-12">
+                        <div class="form-buttons">
+                          <button type="reset" class="btn btn-reset mr-2">
+                            Reset
+                          </button>
+                          <button type="submit" class="btn btn-light-secondary">
+                            Proceed
+                          </button>
+                        </div>
+                      </div>
                     </div>
                   </form>
                 </div>
@@ -126,76 +160,52 @@
             </div>
             <div class="card">
               <div>
-                <div class="row py-4 mb-3">
-                  <div class="col-lg-7 col-md-7 col-sm-12">
-                    <div class="operator-btn-box mb-md-0 justify-content-md-start pl-4">
-                      <h4 class="mr-2">Operator User</h4>
-                      <div class="operator-btn">
-                        <a href="#"><i class="fal fa-plus-circle mr-2 ch-icon"></i>Single</a>
-                        <span class="px-2">|</span>
-                        <a href="operator-user-add-bulk-user.html"><i class="fal fa-plus-circle mr-2 ch-icon"></i>Bulk</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-5 col-md-5 col-sm-12">
-                    <form class="comission-profile-filter-form ch-form-operator" action="">
-                      <div class="form-row justify-content-center justify-content-md-end px-4">
-                        <div class="form-group col-xl-4 col-lg-6 col-md-6 col-sm-4">
-                          <select id="inputState" class="form-control">
-                            <option selected>
-                              <i class="fal fa-arrow-to-bottom download-icon mr-2"></i>
-                              Download
-                            </option>
-                            <option>One</option>
-                            <option>Two</option>
-                            <option>Three</option>
-                          </select>
-                        </div>
-                        <div class="form-group col-xl-4 col-lg-6 col-md-6 col-sm-4">
-                          <select id="inputState" class="form-control">
-                            <option selected>Edit Columns</option>
-                            <option>One</option>
-                            <option>Two</option>
-                            <option>Three</option>
-                          </select>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="col-lg-6 col-md-8 col-sm-12">
-                    <div class="input-group has-search ml-0 ml-md-4 mt-2 px-4 px-md-0">
+                <div class="row py-4 px-3 px-md-0 mb-3">
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="input-group has-search ml-0 ml-md-4">
                       <div class="input-group-prepend">
                         <div class="input-group-text">
                           <i class="fal fa-search"></i>
                         </div>
                       </div>
-                      <input type="text" class="form-control ch-operator-search" placeholder="Search" />
+                      <input type="text" class="form-control" placeholder="Search by Profile name" />
+                      <div class="input-group-append">
+                        <button class="btn btn-light-secondary" type="button">
+                          GO
+                        </button>
+                      </div>
                     </div>
+                  </div>
+                  <div class="offset-xl-2 col-xl-4 col-lg-6 col-md-6 col-sm-12 text-center text-md-right">
+                    <a class="btn mr-4" href=""><i class="fal fa-plus-circle mr-2"></i>ADD Transfer
+                      Control PROFILE</a>
                   </div>
                 </div>
                 <div class="table-container">
-                  <table class="table ch-operator-table mb-5">
+                  <table class="table mb-5">
                     <thead>
                       <tr>
-                        <th class="border-top-0 border-bottom-0 ch-operator-th" scope="col">
-                          User name
+                        <th class="border-top-0 border-bottom-0" scope="col">
+                          <form action="">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="all" />
+                              <label class="custom-control-label" for="all"></label>
+                            </div>
+                          </form>
                         </th>
-                        <th class="border-top-0 border-bottom-0 ch-operator-th" scope="col">
-                          Mobile number
+                        <th class="border-top-0 border-bottom-0" scope="col">
+                          Profile Name
                         </th>
-                        <th class="border-top-0 border-bottom-0 ch-operator-th" scope="col">
-                          Login ID
+                        <th class="border-top-0 border-bottom-0" scope="col">
+                          Profile ID
                         </th>
-                        <th class="border-top-0 border-bottom-0 ch-operator-th" scope="col">
-                          Registered date & time
+                        <th class="border-top-0 border-bottom-0" scope="col">
+                          Description
                         </th>
-                        <th class="border-top-0 border-bottom-0 ch-operator-th" scope="col">
-                          Last modified date & time
+                        <th class="border-top-0 border-bottom-0" scope="col">
+                          Short name
                         </th>
-                        <th class="border-top-0 border-bottom-0 ch-operator-th" scope="col">
-                          Last modified by
-                        </th>
-                        <th class="border-top-0 border-bottom-0 ch-operator-th" scope="col">
+                        <th class="border-top-0 border-bottom-0" scope="col">
                           Status
                         </th>
                         <th class="border-top-0 border-bottom-0" scope="col">
@@ -205,20 +215,38 @@
                     </thead>
                     <tbody>
                       <tr>
+                        <th scope="row">
+                          <form action="">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="customCheck1" />
+                              <label class="custom-control-label" for="customCheck1"></label>
+                            </div>
+                          </form>
+                        </th>
                         <td>
-                          <a class="text-primary" href="operator-user-view-user-details.html"> Rajesh Kumar </a>
+                          <a class="text-primary" href=""> Dist1 </a>
+                          <span class="text-green"><sup><i class="fas fa-check-circle"></i></sup>
+                            (Default)</span>
                         </td>
-                        <td>7202 878 767</td>
-                        <td>NGRT0000</td>
-                        <td>24-04-2019 09:10:17</td>
-                        <td>24-04-2019 09:10:17</td>
-                        <td>Amandeep</td>
+                        <td>219</td>
+                        <td>
+                          automated Tranfer Automated Tranfer Control Profile
+                          Creation Control Profile Creation control Profile
+                          Creation.
+                        </td>
+                        <td>Dist1</td>
 
                         <td class="text-success">Active</td>
                         <td>
                           <div class="action-icons">
                             <a class="light-text mr-2" href="">
                               <i class="fal fa-edit"></i>
+                            </a>
+                            <a class="light-text mr-2" href="">
+                              <i class="fal fa-cog"></i>
+                            </a>
+                            <a class="light-text mr-2" href="">
+                              <i class="fal fa-ban"></i>
                             </a>
                             <a class="light-text mr-2" href="">
                               <i class="fal fa-trash-alt"></i>
@@ -227,20 +255,36 @@
                         </td>
                       </tr>
                       <tr>
+                        <th scope="row">
+                          <form action="">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="c1" />
+                              <label class="custom-control-label" for="c1"></label>
+                            </div>
+                          </form>
+                        </th>
                         <td>
-                          <a class="text-primary" href="operator-user-view-user-details.html"> Rajesh Kumar </a>
+                          <a class="text-primary" href=""> Dist1 </a>
                         </td>
-                        <td>7202 878 767</td>
-                        <td>NGRT0000</td>
-                        <td>24-04-2019 09:10:17</td>
-                        <td>24-04-2019 09:10:17</td>
-                        <td>Amandeep</td>
+                        <td>219</td>
+                        <td>
+                          automated Tranfer Automated Tranfer Control Profile
+                          Creation Control Profile Creation control Profile
+                          Creation.
+                        </td>
+                        <td>Dist1</td>
 
                         <td class="text-success">Active</td>
                         <td>
                           <div class="action-icons">
                             <a class="light-text mr-2" href="">
                               <i class="fal fa-edit"></i>
+                            </a>
+                            <a class="light-text mr-2" href="">
+                              <i class="fal fa-cog"></i>
+                            </a>
+                            <a class="light-text mr-2" href="">
+                              <i class="fal fa-ban"></i>
                             </a>
                             <a class="light-text mr-2" href="">
                               <i class="fal fa-trash-alt"></i>
@@ -249,20 +293,36 @@
                         </td>
                       </tr>
                       <tr>
+                        <th scope="row">
+                          <form action="">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="c2" />
+                              <label class="custom-control-label" for="c2"></label>
+                            </div>
+                          </form>
+                        </th>
                         <td>
-                          <a class="text-primary" href="operator-user-view-user-details.html"> Rajesh Kumar </a>
+                          <a class="text-primary" href=""> Dist1 </a>
                         </td>
-                        <td>7202 878 767</td>
-                        <td>NGRT0000</td>
-                        <td>24-04-2019 09:10:17</td>
-                        <td>24-04-2019 09:10:17</td>
-                        <td>Amandeep</td>
+                        <td>219</td>
+                        <td>
+                          automated Tranfer Automated Tranfer Control Profile
+                          Creation Control Profile Creation control Profile
+                          Creation.
+                        </td>
+                        <td>Dist1</td>
 
                         <td class="text-success">Active</td>
                         <td>
                           <div class="action-icons">
                             <a class="light-text mr-2" href="">
                               <i class="fal fa-edit"></i>
+                            </a>
+                            <a class="light-text mr-2" href="">
+                              <i class="fal fa-cog"></i>
+                            </a>
+                            <a class="light-text mr-2" href="">
+                              <i class="fal fa-ban"></i>
                             </a>
                             <a class="light-text mr-2" href="">
                               <i class="fal fa-trash-alt"></i>
@@ -271,20 +331,36 @@
                         </td>
                       </tr>
                       <tr>
+                        <th scope="row">
+                          <form action="">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="c3" />
+                              <label class="custom-control-label" for="c3"></label>
+                            </div>
+                          </form>
+                        </th>
                         <td>
-                          <a class="text-primary" href="operator-user-view-user-details.html"> Rajesh Kumar </a>
+                          <a class="text-primary" href=""> Dist1 </a>
                         </td>
-                        <td>7202 878 767</td>
-                        <td>NGRT0000</td>
-                        <td>24-04-2019 09:10:17</td>
-                        <td>24-04-2019 09:10:17</td>
-                        <td>Amandeep</td>
+                        <td>219</td>
+                        <td>
+                          automated Tranfer Automated Tranfer Control Profile
+                          Creation Control Profile Creation control Profile
+                          Creation.
+                        </td>
+                        <td>Dist1</td>
 
                         <td class="text-success">Active</td>
                         <td>
                           <div class="action-icons">
                             <a class="light-text mr-2" href="">
                               <i class="fal fa-edit"></i>
+                            </a>
+                            <a class="light-text mr-2" href="">
+                              <i class="fal fa-cog"></i>
+                            </a>
+                            <a class="light-text mr-2" href="">
+                              <i class="fal fa-ban"></i>
                             </a>
                             <a class="light-text mr-2" href="">
                               <i class="fal fa-trash-alt"></i>
@@ -293,20 +369,36 @@
                         </td>
                       </tr>
                       <tr>
+                        <th scope="row">
+                          <form action="">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="c4" />
+                              <label class="custom-control-label" for="c4"></label>
+                            </div>
+                          </form>
+                        </th>
                         <td>
-                          <a class="text-primary" href="operator-user-view-user-details.html"> Rajesh Kumar </a>
+                          <a class="text-primary" href=""> Dist1 </a>
                         </td>
-                        <td>7202 878 767</td>
-                        <td>NGRT0000</td>
-                        <td>24-04-2019 09:10:17</td>
-                        <td>24-04-2019 09:10:17</td>
-                        <td>Amandeep</td>
+                        <td>219</td>
+                        <td>
+                          automated Tranfer Automated Tranfer Control Profile
+                          Creation Control Profile Creation control Profile
+                          Creation.
+                        </td>
+                        <td>Dist1</td>
 
                         <td class="text-success">Active</td>
                         <td>
                           <div class="action-icons">
                             <a class="light-text mr-2" href="">
                               <i class="fal fa-edit"></i>
+                            </a>
+                            <a class="light-text mr-2" href="">
+                              <i class="fal fa-cog"></i>
+                            </a>
+                            <a class="light-text mr-2" href="">
+                              <i class="fal fa-ban"></i>
                             </a>
                             <a class="light-text mr-2" href="">
                               <i class="fal fa-trash-alt"></i>
@@ -315,20 +407,36 @@
                         </td>
                       </tr>
                       <tr>
+                        <th scope="row">
+                          <form action="">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="c5" />
+                              <label class="custom-control-label" for="c5"></label>
+                            </div>
+                          </form>
+                        </th>
                         <td>
-                          <a class="text-primary" href="operator-user-view-user-details.html"> Rajesh Kumar </a>
+                          <a class="text-primary" href=""> Dist1 </a>
                         </td>
-                        <td>7202 878 767</td>
-                        <td>NGRT0000</td>
-                        <td>24-04-2019 09:10:17</td>
-                        <td>24-04-2019 09:10:17</td>
-                        <td>Amandeep</td>
+                        <td>219</td>
+                        <td>
+                          automated Tranfer Automated Tranfer Control Profile
+                          Creation Control Profile Creation control Profile
+                          Creation.
+                        </td>
+                        <td>Dist1</td>
 
                         <td class="text-success">Active</td>
                         <td>
                           <div class="action-icons">
                             <a class="light-text mr-2" href="">
                               <i class="fal fa-edit"></i>
+                            </a>
+                            <a class="light-text mr-2" href="">
+                              <i class="fal fa-cog"></i>
+                            </a>
+                            <a class="light-text mr-2" href="">
+                              <i class="fal fa-ban"></i>
                             </a>
                             <a class="light-text mr-2" href="">
                               <i class="fal fa-trash-alt"></i>
@@ -337,20 +445,36 @@
                         </td>
                       </tr>
                       <tr>
+                        <th scope="row">
+                          <form action="">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="c6" />
+                              <label class="custom-control-label" for="c6"></label>
+                            </div>
+                          </form>
+                        </th>
                         <td>
-                          <a class="text-primary" href="operator-user-view-user-details.html"> Rajesh Kumar </a>
+                          <a class="text-primary" href=""> Dist1 </a>
                         </td>
-                        <td>7202 878 767</td>
-                        <td>NGRT0000</td>
-                        <td>24-04-2019 09:10:17</td>
-                        <td>24-04-2019 09:10:17</td>
-                        <td>Amandeep</td>
+                        <td>219</td>
+                        <td>
+                          automated Tranfer Automated Tranfer Control Profile
+                          Creation Control Profile Creation control Profile
+                          Creation.
+                        </td>
+                        <td>Dist1</td>
 
                         <td class="text-success">Active</td>
                         <td>
                           <div class="action-icons">
                             <a class="light-text mr-2" href="">
                               <i class="fal fa-edit"></i>
+                            </a>
+                            <a class="light-text mr-2" href="">
+                              <i class="fal fa-cog"></i>
+                            </a>
+                            <a class="light-text mr-2" href="">
+                              <i class="fal fa-ban"></i>
                             </a>
                             <a class="light-text mr-2" href="">
                               <i class="fal fa-trash-alt"></i>
