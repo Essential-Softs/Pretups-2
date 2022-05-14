@@ -87,3 +87,15 @@
 .table-bordered td{
     border-color: #000!important;
 }
+.border-radius{
+    border-radius: 8px!important;
+}
+
+.wiz-channel .list-group-item.active {
+    z-index: 2!important;
+    color: #fff!important;
+    background-color: #ffbe45!important;
+    border-color: #ffbe45!important;
+    border-radius: 6px!important;
+    text-align: center!important;
+}

@@ -499,9 +499,9 @@ input[type="checkbox"]:checked::before{
             <div class="row">
               <div class="col-lg-6 order-lg-1 order-2">
                 <div class="d-flex mb-lg-0 mb-2">
-                  <a class="text-dark" href="channel-user.html">Channel User</a>
+                  <a class="text-dark" href="operator-user.html">Operator User</a>
                   <span class="mx-2"><i class="text-secondary fas fa-chevron-right"></i></span>
-                  <h4>Edit Channel User</h4>
+                  <h4>Add Operator User</h4>
                 </div>
               </div>
               <div class="col-lg-6 order-1 order-lg-2">
@@ -524,19 +524,19 @@ input[type="checkbox"]:checked::before{
                                   <div class="connecting-line"></div>
                                   <ul class="nav nav-tabs" role="tablist">
                                       <li role="presentation" class="active">
-                                          <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" aria-expanded="true"><span class="round-tab">1 </span> <i>Personal Details</i></a>
+                                          <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" aria-expanded="true"><span class="round-tab">1 </span> <i>Select Category</i></a>
                                       </li>
                                       <li role="presentation" class="disabled">
-                                          <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" aria-expanded="false"><span class="round-tab">2</span> <i>Login Details</i></a>
+                                          <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" aria-expanded="false"><span class="round-tab">2</span> <i>Personal Details</i></a>
                                       </li>
                                       <li role="presentation" class="disabled">
-                                          <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab"><span class="round-tab">3</span> <i>Role Details</i></a>
+                                          <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab"><span class="round-tab">3</span> <i>Login Details</i></a>
                                       </li>
                                       <li role="presentation" class="disabled">
-                                          <a href="#step4" data-toggle="tab" aria-controls="step4" role="tab"><span class="round-tab">4</span> <i>Payment & Service Details</i></a>
+                                          <a href="#step4" data-toggle="tab" aria-controls="step4" role="tab"><span class="round-tab">4</span> <i>Role Details</i></a>
                                       </li>
                                       <li role="presentation" class="disabled">
-                                          <a href="#step5" data-toggle="tab" aria-controls="step5" role="tab"><span class="round-tab">5</span> <i>Profile Details</i></a>
+                                          <a href="#step5" data-toggle="tab" aria-controls="step5" role="tab"><span class="round-tab">5</span> <i>Service & other information</i></a>
                                       </li>
                                   </ul>
                               </div>
@@ -546,68 +546,27 @@ input[type="checkbox"]:checked::before{
                                       <div class="tab-pane active" role="tabpanel" id="step1">
                                         <div class="card p-4">
                                           <div class="row">
-                                            <div class="col-lg-2 col-md-4 col-sm-12">
-                                              <div class="">
-                                                <p class="light-text text-uppercase small mb-1">
-                                                  Domain
-                                                </p>
-                                                <p class="mb-0">
-                                                  Distributor
-                                                </p>
+                                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                              <div class="form-group">
+                                                <label class="text-dark" for="">Category</label>
+                                                <select class="custom-select" name="">
+                                                  <option selected>Custom Care</option>
+                                                  <option value="1">One</option>
+                                                  <option value="2">Two</option>
+                                                  <option value="3">Three</option>
+                                                </select>
                                               </div>
                                             </div>
-                                            <div class="col-lg-2 col-md-4 col-sm-12">
-                                              <div class="">
-                                                <p class="light-text text-uppercase small mb-1">
-                                                  Category
-                                                </p>
-                                                <p class="mb-0">
-                                                  Retailer
-                                                </p>
-                                              </div>
-                                            </div>
-                                            <div class="col-lg-2 col-md-4 col-sm-12">
-                                              <div class="">
-                                                <p class="light-text text-uppercase small mb-1">
-                                                  Parent Category
-                                                </p>
-                                                <p class="mb-0">
-                                                  Dealer
-                                                </p>
-                                              </div>
-                                            </div>
-                                            <div class="col-lg-2 col-md-4 col-sm-12">
-                                              <div class="">
-                                                <p class="light-text text-uppercase small mb-1">
-                                                  Geography
-                                                </p>
-                                                <p class="mb-0">
-                                                  Karnatka
-                                                </p>
-                                              </div>
-                                            </div>
-                                            <div class="col-lg-2 col-md-4 col-sm-12">
-                                              <div class="">
-                                                <p class="light-text text-uppercase small mb-1">
-                                                  Owner User
-                                                </p>
-                                                <p class="mb-0">
-                                                  Chirantan
-                                                </p>
-                                              </div>
-                                            </div>
-                                            <div class="col-lg-2 col-md-4 col-sm-12">
-                                              <div class="">
-                                                <p class="light-text text-uppercase small mb-1">
-                                                  Parent User
-                                                </p>
-                                                <p class="mb-0">
-                                                  Owis
-                                                </p>
-                                              </div>
+                                            <div class="col-12">
+                                              <ul class="list-inline pull-right">
+                                                <li><button type="button" class="default-btn btn btn-reset">Back</button></li>
+                                                <li><button type="button" class="default-btn btn next-step">Next</button></li>
+                                              </ul>
                                             </div>
                                           </div>
                                         </div>
+                                      </div>
+                                      <div class="tab-pane" role="tabpanel" id="step2">
                                         <div class="card p-4">
                                           <div class="row">
                                             <div class="col-12">
@@ -633,6 +592,12 @@ input[type="checkbox"]:checked::before{
                                             </div>
                                             <div class="col-lg-6 col-md-6 col-sm-12">
                                               <div class="form-group">
+                                                <label class="text-dark" for="">Mobile Number</label>
+                                                <input type="text" class="form-control" id="" name="" placeholder="" value="">
+                                              </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                              <div class="form-group">
                                                 <label class="text-dark" for="">Contact Number <span class="light-text">(Optional)</span></label>
                                                 <input type="text" class="form-control" id="" name="" placeholder="" value="">
                                               </div>
@@ -651,8 +616,8 @@ input[type="checkbox"]:checked::before{
                                             </div>
                                             <div class="col-lg-6 col-md-6 col-sm-12">
                                               <div class="form-group">
-                                                <label class="text-dark" for="">Other Email ID (for alerts) <span class="light-text">(Optional)</span></label>
-                                                <input type="email" class="form-control" id="" name="" placeholder="" value="">
+                                                <label class="text-dark" for="">Appointment Date</label>
+                                                <input type="date" class="form-control" id="" name="" placeholder="" value="">
                                               </div>
                                             </div>
                                             <div class="col-lg-6 col-md-6 col-sm-12">
@@ -669,83 +634,62 @@ input[type="checkbox"]:checked::before{
                                             </div>
                                             <div class="col-lg-6 col-md-6 col-sm-12">
                                               <div class="form-group">
+                                                <label class="text-dark" for="">Division</label>
+                                                <select class="custom-select" name="">
+                                                  <option selected>534634</option>
+                                                  <option value="1">One</option>
+                                                  <option value="2">Two</option>
+                                                  <option value="3">Three</option>
+                                                </select>
+                                              </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                              <div class="form-group">
+                                                <label class="text-dark" for="">Department</label>
+                                                <select class="custom-select" name="">
+                                                  <option selected>Distributor</option>
+                                                  <option value="1">One</option>
+                                                  <option value="2">Two</option>
+                                                  <option value="3">Three</option>
+                                                </select>
+                                              </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                              <div class="form-group">
                                                 <label class="text-dark" for="">Subscriber Code <span class="light-text">(Optional)</span></label>
                                                 <input type="text" class="form-control" id="" name="" placeholder="" value="">
                                               </div>
                                             </div>
                                             <div class="col-lg-6 col-md-6 col-sm-12">
-                                              <div class="form-group">
-                                                <label class="text-dark" for="">External Code</label>
-                                                <input type="text" class="form-control" id="" name="" placeholder="" value="">
+                                              <label class="text-dark" for="">External Code</label>
+                                              <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                <div class="input-group-append">
+                                                  <span class="input-group-text p-1" id="basic-addon2">
+                                                    <a href="" class="btn m-0">Fetch Details</a>
+                                                  </span>
+                                                </div>
                                               </div>
                                             </div>
                                             <div class="col-12 mt-3">
-                                              <h6>Geography Details</h6>
+                                              <h6>Geography Zone</h6>
                                             </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-12">
-                                              <div class="form-group">
-                                                <label class="text-dark" for="">Geography</label>
-                                                <select class="custom-select" name="">
-                                                  <option selected>Karnatka</option>
-                                                  <option value="1">One</option>
-                                                  <option value="2">Two</option>
-                                                  <option value="3">Three</option>
-                                                </select>
+                                            <div class="col-12">
+                                              <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="select-all" value="option1">
+                                                <label class="form-check-label" for="select-all">Select All</label>
                                               </div>
                                             </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-12">
-                                              <div class="form-group">
-                                                <label class="text-dark" for="">Area</label>
-                                                <select class="custom-select" name="">
-                                                  <option selected>Bangalore</option>
-                                                  <option value="1">One</option>
-                                                  <option value="2">Two</option>
-                                                  <option value="3">Three</option>
-                                                </select>
+                                            <div class="col-lg-2 col-md-4 col-sm-12">
+                                              <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="harywan" value="option1">
+                                                <label class="form-check-label" for="harywan">Haryana</label>
                                               </div>
                                             </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-12">
-                                              <div class="form-group">
-                                                <label class="text-dark" for="">Sub Area 1</label>
-                                                <select class="custom-select" name="">
-                                                  <option selected>HSR Layout</option>
-                                                  <option value="1">One</option>
-                                                  <option value="2">Two</option>
-                                                  <option value="3">Three</option>
-                                                </select>
-                                              </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-12">
-                                              <div class="form-group">
-                                                <label class="text-dark" for="">Sub Area 2</label>
-                                                <select class="custom-select" name="">
-                                                  <option selected>Select</option>
-                                                  <option value="1">One</option>
-                                                  <option value="2">Two</option>
-                                                  <option value="3">Three</option>
-                                                </select>
-                                              </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-12">
-                                              <div class="form-group">
-                                                <label class="text-dark" for="">Sub Area 3</label>
-                                                <select class="custom-select" name="">
-                                                  <option selected>Select</option>
-                                                  <option value="1">One</option>
-                                                  <option value="2">Two</option>
-                                                  <option value="3">Three</option>
-                                                </select>
-                                              </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-12">
-                                              <div class="form-group">
-                                                <label class="text-dark" for="">Sub Area 4</label>
-                                                <select class="custom-select" name="">
-                                                  <option selected>Select</option>
-                                                  <option value="1">One</option>
-                                                  <option value="2">Two</option>
-                                                  <option value="3">Three</option>
-                                                </select>
+                                            <div class="col-lg-2 col-md-4 col-sm-12">
+                                              <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="haryana-2" value="option1">
+                                                <label class="form-check-label" for="haryana-2">Haryana 2</label>
                                               </div>
                                             </div>
                                             <div class="col-12">
@@ -781,89 +725,6 @@ input[type="checkbox"]:checked::before{
                                                 <input type="text" class="form-control" id="" name="" placeholder="" value="">
                                               </div>
                                             </div>
-                                            <div class="col-lg-3 col-md-6 col-sm-12">
-                                              <div class="form-group">
-                                                <label class="text-dark" for="">Longitude</label>
-                                                <input type="text" class="form-control" id="" name="" placeholder="" value="">
-                                              </div>
-                                            </div>
-                                            <div class="col-lg-3 col-md-6 col-sm-12">
-                                              <div class="form-group">
-                                                <label class="text-dark" for="">Latitude</label>
-                                                <input type="text" class="form-control" id="" name="" placeholder="" value="">
-                                              </div>
-                                            </div>
-                                            <div class="col-12">
-                                              <h4 class="mb-3 mt-3">Notification Language  <span class="light-text small">(Optional)</span></h4>
-                                            </div>
-                                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                              <div class="form-group">
-                                                <label class="text-dark d-block" for="">Channel to Channel</label>
-                                                <form action="#">
-                                                  <p class="d-inline-block mr-3">
-                                                    <input type="radio" id="test1" name="radio-group" checked>
-                                                    <label for="test1">English</label>
-                                                  </p>
-                                                  <p class="d-inline-block  mr-3">
-                                                    <input type="radio" id="test2" name="radio-group">
-                                                    <label for="test2">Spanish</label>
-                                                  </p>
-                                                </form>
-                                              </div>
-                                            </div>
-                                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                              <div class="form-group">
-                                                <label class="text-dark d-block" for="">Peer to Peer</label>
-                                                <form action="#">
-                                                  <p class="d-inline-block mr-3">
-                                                    <input type="radio" id="test1" name="radio-group" checked>
-                                                    <label for="test1">English</label>
-                                                  </p>
-                                                  <p class="d-inline-block  mr-3">
-                                                    <input type="radio" id="test2" name="radio-group">
-                                                    <label for="test2">Spanish</label>
-                                                  </p>
-                                                </form>
-                                              </div>
-                                            </div>
-                                            <div class="col-12">
-                                              <h4 class="mb-3 mt-3">Other Information  <span class="light-text small">(Optional)</span></h4>
-                                            </div>
-                                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                              <div class="form-group">
-                                                <label class="text-dark" for="">Company</label>
-                                                <input type="text" class="form-control" id="" name="" placeholder="" value="">
-                                              </div>
-                                            </div>
-                                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                              <div class="form-group">
-                                                <label class="text-dark" for="">Fax</label>
-                                                <input type="text" class="form-control" id="" name="" placeholder="" value="">
-                                              </div>
-                                            </div>
-                                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                              <div class="form-group">
-                                                <label class="text-dark" for="">Appointment Date</label>
-                                                <input type="date" class="form-control" id="" name="" placeholder="" value="">
-                                              </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-12">
-                                              <div class="form-group">
-                                                <label class="text-dark" for="">First Name</label>
-                                                <select class="custom-select" name="">
-                                                  <option selected>PAN Card</option>
-                                                  <option value="1">One</option>
-                                                  <option value="2">Two</option>
-                                                  <option value="3">Three</option>
-                                                </select>
-                                              </div>
-                                            </div>
-                                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                              <div class="form-group">
-                                                <label class="text-dark" for="">Document No.</label>
-                                                <input type="text" class="form-control" id="" name="" placeholder="" value="">
-                                              </div>
-                                            </div>
                                             <div class="col-12">
                                               <ul class="list-inline pull-right">
                                                 <li><button type="button" class="default-btn btn btn-reset">Back</button></li>
@@ -872,9 +733,8 @@ input[type="checkbox"]:checked::before{
                                             </div>
                                           </div>
                                         </div>
-                                          
                                       </div>
-                                      <div class="tab-pane" role="tabpanel" id="step2">
+                                      <div class="tab-pane" role="tabpanel" id="step3">
                                         <div class="card p-4">
                                           <div class="row">
                                             <div class="col-12">
@@ -886,14 +746,24 @@ input[type="checkbox"]:checked::before{
                                                 <input type="text" class="form-control" id="" name="" placeholder="" value="">
                                               </div>
                                             </div>
-                                            <div class="col-lg-6 col-md-none col-sm-none"></div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                              <div class="form-group">
+                                                <label class="text-dark" for="">Web Password</label>
+                                                <input type="password" class="form-control" id="" name="" placeholder="" value="">
+                                              </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                              <div class="form-group">
+                                                <label class="text-dark" for="">Confirm Web Password</label>
+                                                <input type="password" class="form-control" id="" name="" placeholder="" value="">
+                                              </div>
+                                            </div>
                                             <div class="col-lg-6 col-md-6 col-sm-12">
                                               <div class="form-group">
                                                 <label class="text-dark" for="">Allowed IP's <span class="light-text">(Optional)</span></label>
                                                 <textarea name="" class="form-control" id="" cols="5" rows="5"></textarea>
                                               </div>
                                             </div>
-                                            <div class="col-lg-6 col-md-none col-sm-none"></div>
                                             <div class="col-lg-6 col-md-12 col-sm-12 mt-3">
                                               <label class="text-dark" for="">Login allowed days <span class="light-text">(Optional)</span></label>
                                               <div class="row">
@@ -1014,7 +884,7 @@ input[type="checkbox"]:checked::before{
                                           </div>
                                         </div>
                                       </div>
-                                      <div class="tab-pane" role="tabpanel" id="step3">
+                                      <div class="tab-pane" role="tabpanel" id="step4">
                                         <div class="card p-4">
                                           <div class="row">
                                             <div class="col-12">
@@ -1694,7 +1564,178 @@ input[type="checkbox"]:checked::before{
                                                     </div>
                                                   </div>
                                                 </div>
-                                                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
+                                                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                                                  <div class="bg-light border p-4">
+                                                    <div class="row">
+                                                      <div class="col-lg-2 col-md-2 col-sm-2">
+                                                        <div class="d-flex justify-content-end">
+                                                          <p>Group Name</p>
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-lg-2 col-md-2 col-sm-2">
+                                                        <div class="">
+                                                          <p>Role Name</p>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="py-4 pl-1">
+                                                    <div class="row">
+                                                      <div class="col-lg-2 col-md-2 col-sm-2">
+                                                        <div class="d-flex justify-content-between">
+                                                          <form action="#">
+                                                            <p class="d-inline-block mr-3">
+                                                              <input type="radio" id="test1" name="radio-group" checked>
+                                                              <label for="test1"></label>
+                                                            </p>
+                                                          </form>
+                                                          <p class="mt-2">
+                                                            AUT78665
+                                                          </p>
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-lg-2 col-md-2 col-sm-2">
+                                                        <div class="">
+                                                          <p class="mt-2">
+                                                            AUT78665
+                                                          </p>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="row">
+                                                      <div class="col-lg-2 col-md-2 col-sm-2">
+                                                        <div class="d-flex justify-content-between">
+                                                          <form action="#">
+                                                            <p class="d-inline-block mr-3">
+                                                              <input type="radio" id="role-1" name="radio-group-1" checked>
+                                                              <label for="role-1"></label>
+                                                            </p>
+                                                          </form>
+                                                          <p class="mt-2">
+                                                            AUT78665
+                                                          </p>
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-lg-2 col-md-2 col-sm-2">
+                                                        <div class="">
+                                                          <p class="mt-2">
+                                                            AUT78665
+                                                          </p>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="row">
+                                                      <div class="col-lg-2 col-md-2 col-sm-2">
+                                                        <div class="d-flex justify-content-between">
+                                                          <form action="#">
+                                                            <p class="d-inline-block mr-3">
+                                                              <input type="radio" id="role-2" name="radio-group-1" checked>
+                                                              <label for="role-2"></label>
+                                                            </p>
+                                                          </form>
+                                                          <p class="mt-2">
+                                                            AUT78665
+                                                          </p>
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-lg-2 col-md-2 col-sm-2">
+                                                        <div class="">
+                                                          <p class="mt-2">
+                                                            AUT78665
+                                                          </p>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="row">
+                                                      <div class="col-lg-2 col-md-2 col-sm-2">
+                                                        <div class="d-flex justify-content-between">
+                                                          <form action="#">
+                                                            <p class="d-inline-block mr-3">
+                                                              <input type="radio" id="role-3" name="radio-group-1" checked>
+                                                              <label for="role-3"></label>
+                                                            </p>
+                                                          </form>
+                                                          <p class="mt-2">
+                                                            AUT78665
+                                                          </p>
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-lg-2 col-md-2 col-sm-2">
+                                                        <div class="">
+                                                          <p class="mt-2">
+                                                            AUT78665
+                                                          </p>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="row">
+                                                      <div class="col-lg-2 col-md-2 col-sm-2">
+                                                        <div class="d-flex justify-content-between">
+                                                          <form action="#">
+                                                            <p class="d-inline-block mr-3">
+                                                              <input type="radio" id="role-4" name="radio-group-1" checked>
+                                                              <label for="role-4"></label>
+                                                            </p>
+                                                          </form>
+                                                          <p class="mt-2">
+                                                            AUT78665
+                                                          </p>
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-lg-2 col-md-2 col-sm-2">
+                                                        <div class="">
+                                                          <p class="mt-2">
+                                                            AUT78665
+                                                          </p>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="row">
+                                                      <div class="col-lg-2 col-md-2 col-sm-2">
+                                                        <div class="d-flex justify-content-between">
+                                                          <form action="#">
+                                                            <p class="d-inline-block mr-3">
+                                                              <input type="radio" id="role-5" name="radio-group-1" checked>
+                                                              <label for="role-5"></label>
+                                                            </p>
+                                                          </form>
+                                                          <p class="mt-2">
+                                                            AUT78665
+                                                          </p>
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-lg-2 col-md-2 col-sm-2">
+                                                        <div class="">
+                                                          <p class="mt-2">
+                                                            AUT78665
+                                                          </p>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="row">
+                                                      <div class="col-lg-2 col-md-2 col-sm-2">
+                                                        <div class="d-flex justify-content-between">
+                                                          <form action="#">
+                                                            <p class="d-inline-block mr-3">
+                                                              <input type="radio" id="role-7" name="radio-group-1" checked>
+                                                              <label for="role-7"></label>
+                                                            </p>
+                                                          </form>
+                                                          <p class="mt-2">
+                                                            AUT78665
+                                                          </p>
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-lg-2 col-md-2 col-sm-2">
+                                                        <div class="">
+                                                          <p class="mt-2">
+                                                            AUT78665
+                                                          </p>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
                                               </div>
                                             </div>
                                           </div>
@@ -1709,12 +1750,143 @@ input[type="checkbox"]:checked::before{
                                             </div>
                                           </div>
                                         </div>
+
+                                        
+                                          <!-- <div class="all-info-container">
+                                              <div class="list-content">
+                                                  <a href="#listone" data-toggle="collapse" aria-expanded="false" aria-controls="listone">Collapse 1 <i class="fa fa-chevron-down"></i></a>
+                                                  <div class="collapse" id="listone">
+                                                      <div class="list-box">
+                                                          <div class="row">
+                                                              
+                                                              <div class="col-md-6">
+                                                                  <div class="form-group">
+                                                                      <label>First and Last Name *</label> 
+                                                                      <input class="form-control" type="text"  name="name" placeholder="" disabled="disabled"> 
+                                                                  </div>
+                                                              </div>
+                                                              
+                                                              <div class="col-md-6">
+                                                                  <div class="form-group">
+                                                                      <label>Phone Number *</label> 
+                                                                      <input class="form-control" type="text" name="name" placeholder="" disabled="disabled"> 
+                                                                  </div>
+                                                              </div>
+                                                              
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="list-content">
+                                                  <a href="#listtwo" data-toggle="collapse" aria-expanded="false" aria-controls="listtwo">Collapse 2 <i class="fa fa-chevron-down"></i></a>
+                                                  <div class="collapse" id="listtwo">
+                                                      <div class="list-box">
+                                                          <div class="row">
+                                                              
+                                                              <div class="col-md-6">
+                                                                  <div class="form-group">
+                                                                      <label>Address 1 *</label> 
+                                                                      <input class="form-control" type="text" name="name" placeholder="" disabled="disabled"> 
+                                                                  </div>
+                                                              </div>
+                                                              
+                                                              <div class="col-md-6">
+                                                                  <div class="form-group">
+                                                                      <label>City / Town *</label> 
+                                                                      <input class="form-control" type="text" name="name" placeholder="" disabled="disabled"> 
+                                                                  </div>
+                                                              </div>
+                                                              <div class="col-md-6">
+                                                                  <div class="form-group">
+                                                                      <label>Country *</label> 
+                                                                      <select name="country2" class="form-control" id="country2" disabled="disabled">
+                                                                          <option value="NG" selected="selected">Nigeria</option>
+                                                                          <option value="NU">Niue</option>
+                                                                          <option value="NF">Norfolk Island</option>
+                                                                          <option value="KP">North Korea</option>
+                                                                          <option value="MP">Northern Mariana Islands</option>
+                                                                          <option value="NO">Norway</option>
+                                                                      </select>
+                                                                  </div>
+                                                              </div>
+                                                              
+                                                              
+                                                              
+                                                              <div class="col-md-6">
+                                                                  <div class="form-group">
+                                                                      <label>Legal Form</label> 
+                                                                      <select name="legalform2" class="form-control" id="legalform2" disabled="disabled">
+                                                                          <option value="" selected="selected">-Select an Answer-</option>
+                                                                          <option value="AG">Limited liability company</option>
+                                                                          <option value="GmbH">Public Company</option>
+                                                                          <option value="GbR">No minimum capital, unlimited liability of partners, non-busines</option>
+                                                                      </select> 
+                                                                  </div>
+                                                              </div>
+                                                              <div class="col-md-6">
+                                                                  <div class="form-group">
+                                                                      <label>Business Registration No.</label> 
+                                                                      <input class="form-control" type="text" name="name" placeholder="" disabled="disabled"> 
+                                                                  </div>
+                                                              </div>
+                                                              <div class="col-md-6">
+                                                                  <div class="form-group">
+                                                                      <label>Registered</label> 
+                                                                      <select name="vat2" class="form-control" id="vat2" disabled="disabled">
+                                                                          <option value="" selected="selected">-Select an Answer-</option>
+                                                                          <option value="yes">Yes</option>
+                                                                          <option value="no">No</option>
+                                                                      </select> 
+                                                                  </div>
+                                                              </div>
+                                                              <div class="col-md-6">
+                                                                  <div class="form-group">
+                                                                      <label>Seller</label> 
+                                                                      <input class="form-control" type="text" name="name" placeholder="" disabled="disabled"> 
+                                                                  </div>
+                                                              </div>
+                                                              <div class="col-md-12">
+                                                                  <div class="form-group">
+                                                                      <label>Company Name *</label> 
+                                                                      <input class="form-control" type="password" name="name" placeholder="" disabled="disabled"> 
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="list-content">
+                                                  <a href="#listthree" data-toggle="collapse" aria-expanded="false" aria-controls="listthree">Collapse 3 <i class="fa fa-chevron-down"></i></a>
+                                                  <div class="collapse" id="listthree">
+                                                      <div class="list-box">
+                                                          <div class="row">
+                                                              
+                                                              <div class="col-md-6">
+                                                                  <div class="form-group">
+                                                                      <label>Name *</label> 
+                                                                      <input class="form-control" type="text" name="name" placeholder=""> 
+                                                                  </div>
+                                                              </div>
+                                                              
+                                                              
+                                                              <div class="col-md-6">
+                                                                  <div class="form-group">
+                                                                      <label>Number *</label> 
+                                                                      <input class="form-control" type="text" name="name" placeholder=""> 
+                                                                  </div>
+                                                              </div>
+                                                              
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div> -->
                                       </div>
-                                      <div class="tab-pane" role="tabpanel" id="step4">
+                                      <div class="tab-pane" role="tabpanel" id="step5">
                                         <div class="card p-4">
                                           <div class="row">
                                             <div class="col-12">
-                                              <h4 class="mb-4">Payment & Service Details <span class="light-text small">(Optional)</span></h4>
+                                              <h4 class="mb-4">Service & Other Information <span class="light-text small">(Optional)</span></h4>
                                             </div>
                                           </div>
                                           <div class="row mb-4">
@@ -1931,204 +2103,10 @@ input[type="checkbox"]:checked::before{
                                           <div class="row">
                                             <div class="col-12">
                                               <ul class="list-inline pull-right">
-                                                <li><button type="button" class="default-btn prev-step btn btn-reset">Back</button></li>
-                                                <li><button type="button" class="default-btn next-step skip-btn btn btn-reset">Skip</button></li>
-                                                <li><button type="button" class="default-btn btn next-step">Next</button></li>
-                                              </ul>
-                                            </div>
-                                          </div>
-                                        </div>
-                                          <!-- <div class="all-info-container">
-                                              <div class="list-content">
-                                                  <a href="#listone" data-toggle="collapse" aria-expanded="false" aria-controls="listone">Collapse 1 <i class="fa fa-chevron-down"></i></a>
-                                                  <div class="collapse" id="listone">
-                                                      <div class="list-box">
-                                                          <div class="row">
-                                                              
-                                                              <div class="col-md-6">
-                                                                  <div class="form-group">
-                                                                      <label>First and Last Name *</label> 
-                                                                      <input class="form-control" type="text"  name="name" placeholder="" disabled="disabled"> 
-                                                                  </div>
-                                                              </div>
-                                                              
-                                                              <div class="col-md-6">
-                                                                  <div class="form-group">
-                                                                      <label>Phone Number *</label> 
-                                                                      <input class="form-control" type="text" name="name" placeholder="" disabled="disabled"> 
-                                                                  </div>
-                                                              </div>
-                                                              
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                              <div class="list-content">
-                                                  <a href="#listtwo" data-toggle="collapse" aria-expanded="false" aria-controls="listtwo">Collapse 2 <i class="fa fa-chevron-down"></i></a>
-                                                  <div class="collapse" id="listtwo">
-                                                      <div class="list-box">
-                                                          <div class="row">
-                                                              
-                                                              <div class="col-md-6">
-                                                                  <div class="form-group">
-                                                                      <label>Address 1 *</label> 
-                                                                      <input class="form-control" type="text" name="name" placeholder="" disabled="disabled"> 
-                                                                  </div>
-                                                              </div>
-                                                              
-                                                              <div class="col-md-6">
-                                                                  <div class="form-group">
-                                                                      <label>City / Town *</label> 
-                                                                      <input class="form-control" type="text" name="name" placeholder="" disabled="disabled"> 
-                                                                  </div>
-                                                              </div>
-                                                              <div class="col-md-6">
-                                                                  <div class="form-group">
-                                                                      <label>Country *</label> 
-                                                                      <select name="country2" class="form-control" id="country2" disabled="disabled">
-                                                                          <option value="NG" selected="selected">Nigeria</option>
-                                                                          <option value="NU">Niue</option>
-                                                                          <option value="NF">Norfolk Island</option>
-                                                                          <option value="KP">North Korea</option>
-                                                                          <option value="MP">Northern Mariana Islands</option>
-                                                                          <option value="NO">Norway</option>
-                                                                      </select>
-                                                                  </div>
-                                                              </div>
-                                                              
-                                                              
-                                                              
-                                                              <div class="col-md-6">
-                                                                  <div class="form-group">
-                                                                      <label>Legal Form</label> 
-                                                                      <select name="legalform2" class="form-control" id="legalform2" disabled="disabled">
-                                                                          <option value="" selected="selected">-Select an Answer-</option>
-                                                                          <option value="AG">Limited liability company</option>
-                                                                          <option value="GmbH">Public Company</option>
-                                                                          <option value="GbR">No minimum capital, unlimited liability of partners, non-busines</option>
-                                                                      </select> 
-                                                                  </div>
-                                                              </div>
-                                                              <div class="col-md-6">
-                                                                  <div class="form-group">
-                                                                      <label>Business Registration No.</label> 
-                                                                      <input class="form-control" type="text" name="name" placeholder="" disabled="disabled"> 
-                                                                  </div>
-                                                              </div>
-                                                              <div class="col-md-6">
-                                                                  <div class="form-group">
-                                                                      <label>Registered</label> 
-                                                                      <select name="vat2" class="form-control" id="vat2" disabled="disabled">
-                                                                          <option value="" selected="selected">-Select an Answer-</option>
-                                                                          <option value="yes">Yes</option>
-                                                                          <option value="no">No</option>
-                                                                      </select> 
-                                                                  </div>
-                                                              </div>
-                                                              <div class="col-md-6">
-                                                                  <div class="form-group">
-                                                                      <label>Seller</label> 
-                                                                      <input class="form-control" type="text" name="name" placeholder="" disabled="disabled"> 
-                                                                  </div>
-                                                              </div>
-                                                              <div class="col-md-12">
-                                                                  <div class="form-group">
-                                                                      <label>Company Name *</label> 
-                                                                      <input class="form-control" type="password" name="name" placeholder="" disabled="disabled"> 
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                              <div class="list-content">
-                                                  <a href="#listthree" data-toggle="collapse" aria-expanded="false" aria-controls="listthree">Collapse 3 <i class="fa fa-chevron-down"></i></a>
-                                                  <div class="collapse" id="listthree">
-                                                      <div class="list-box">
-                                                          <div class="row">
-                                                              
-                                                              <div class="col-md-6">
-                                                                  <div class="form-group">
-                                                                      <label>Name *</label> 
-                                                                      <input class="form-control" type="text" name="name" placeholder=""> 
-                                                                  </div>
-                                                              </div>
-                                                              
-                                                              
-                                                              <div class="col-md-6">
-                                                                  <div class="form-group">
-                                                                      <label>Number *</label> 
-                                                                      <input class="form-control" type="text" name="name" placeholder=""> 
-                                                                  </div>
-                                                              </div>
-                                                              
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                          </div> -->
-                                      </div>
-                                      <div class="tab-pane" role="tabpanel" id="step5">
-                                        <div class="card p-4">
-                                          <h4 class="mb-4">Grade & Profile Information</h4>
-                                          <div class="row">
-                                            <div class="col-lg-2 col-md-4 col-sm-12">
-                                              <div>
-                                                <p class="text-uppercase light-text small mb-1">User grade</p>
-                                                <p>AUT23456</p>
-                                              </div>
-                                            </div>
-                                            <div class="col-lg-2 col-md-4 col-sm-12">
-                                              <div>
-                                                <p class="text-uppercase light-text small mb-1">Commission profile</p>
-                                                <p>Retailer 2</p>
-                                              </div>
-                                            </div>
-                                            <div class="col-lg-2 col-md-4 col-sm-12">
-                                              <div>
-                                                <p class="text-uppercase light-text small mb-1">Transfer profile</p>
-                                                <p>Dealer 1</p>
-                                              </div>
-                                            </div>
-                                            <div class="col-lg-2 col-md-4 col-sm-12">
-                                              <div>
-                                                <p class="text-uppercase light-text small mb-1">Transfer Rule Type</p>
-                                                <p>Rule type A</p>
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="row">
-                                            <div class="col-12">
-                                              <ul class="list-inline pull-right">
                                                 <li><button type="button" class="default-btn prev-step btn btn-reset">Cancle</button></li>
                                                 <li><button type="button" class="default-btn prev-step btn btn-reset">Back</button></li>
                                                 <li><button type="button" class="default-btn next-step skip-btn btn btn-reset">Save & Review</button></li>
-                                                <!-- <li><button type="button" class="default-btn btn next-step">Save & Submit</button></li> -->
-                                                <li>
-                                                  <button type="button" class="btn text-uppercase" data-toggle="modal" data-target="#exampleModalCenter">
-                                                    Save & Submit
-                                                  </button>
-                                                  
-                                                  <!-- Modal -->
-                                                  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                                    <div class="modal-dialog modal-dialog-centered" role="document">
-                                                      <div class="modal-content p-2">
-                                                        <div class="border p-2" style="border-radius: 10px;">
-                                                          <div class="modal-header border-bottom-0 d-block">
-                                                            <h4 class="text-center" style="font-size: 30px; font-weight: bold; color: green; margin-bottom: 30px;"><i class="far fa-check-circle"></i></h4>
-                                                            <h4 class="modal-title text-center" id="exampleModalLongTitle" style="color: #000; font-weight: bold; font-size: 25px; padding-left: 25px; padding-right: 25px;">The changes have been done.</h4>
-                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="padding: 0px; margin-top: -115px; margin-right: -10px;">
-                                                              <span aria-hidden="true">&times;</span>
-                                                            </button>
-                                                          </div>
-                                                          <div class="modal-footer justify-content-center border-top-0 pt-0">
-                                                            <button type="button" class="btn text-center" style="padding-left: 50px; padding-right: 50px;" data-dismiss="modal">Done</button>
-                                                          </div>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </li>
+                                                <li><button type="button" class="default-btn btn next-step">Save & Submit</button></li>
                                               </ul>
                                             </div>
                                           </div>
