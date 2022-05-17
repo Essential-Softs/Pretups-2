@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,10 +36,10 @@
 
 <body class="">
   <div class="wrapper">
-   <!-- Added this div -->
-   <div id="sidebar">
-  </div>
-<!-- Added this div -->
+    <!-- Added this div -->
+    <div id="sidebar">
+    </div>
+    <!-- Added this div -->
     <div class="main-panel">
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
@@ -88,35 +89,25 @@
               <li>23/08/2022, 12:03:00 AM</li>
             </ul>
           </div>
+          <div class="col-12">
+            <h4 class="mb-4">Peer To Peer Rules</h4>
+            <ul class="nav nav-tabs comission-profile-first-toggle mb-5" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active mr-1" id="single-operation-tab" data-toggle="tab" href="#single-operation"
+                  role="tab" aria-controls="single-operation" aria-selected="true">Single Operation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="bulk-operation-tab" data-toggle="tab" href="#bulk-operation" role="tab"
+                  aria-controls="bulk-operation" aria-selected="false">Bulk Operation</a>
+              </li>
+            </ul>
           </div>
-          <div class="row">
-            <div class="col-lg-6 col-md-12 col-sm-12 order-lg-first order-md-last order-sm-last">
-              <h4 class="mb-4">Peer To Peer Rules</h4>
-              <ul class="nav nav-tabs comission-profile-first-toggle network-stock-toggle mb-5" id="myTab" role="tablist">
-                <li class="nav-item">
-                  <a class="nav-link active mr-1" id="single-operation-tab" data-toggle="tab" href="#single-operation"
-                    role="tab" aria-controls="single-operation" aria-selected="true">Single Operation</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="bulk-operation-tab" data-toggle="tab" href="#bulk-operation" role="tab"
-                    aria-controls="bulk-operation" aria-selected="false">Bulk Operation</a>
-                </li>
-              </ul>
-            </div>
-          <div class="col-lg-6 col-md-12 col-sm-12 order-lg-first order-md-last order-sm-last">
-            <div class="text-right">
-              <a class="btn btn-light-secondary bg-white" href="voucher-calculate-ttansfer-value.html">
-                Calculate Transfer Value
-              </a>
-            </div>
-          </div>
-          
           <div class="col-12">
             <div class="tab-content" id="myTabContent">
               <div class="tab-pane fade show active" id="single-operation" role="tabpanel"
                 aria-labelledby="single-operation-tab">
                 <div class="card mb-4">
-                  <div class="d-flex justify-content-between px-3 py-3">
+                  <div class="d-flex justify-content-between px-4 py-3">
                     <h4>Filters</h4>
                     <a class="light-text" data-toggle="collapse" href="#collapseExample" role="button"
                       aria-expanded="true" aria-controls="collapseExample">
@@ -127,8 +118,8 @@
                     <div class="card-body">
                       <form class="comission-profile-filter-form" action="">
                         <div class="form-row">
-                          <div class="form-group col-xl-2 col-lg-4 col-md-4 col-sm-12">
-                            <label for="inputState">Sender type</label>
+                          <div class="form-group col-xl-2 col-lg-3 col-md-4 col-sm-12">
+                            <label for="inputState">Domain</label>
                             <select id="inputState" class="form-control">
                               <option selected>All</option>
                               <option>One</option>
@@ -136,8 +127,8 @@
                               <option>Three</option>
                             </select>
                           </div>
-                          <div class="form-group col-xl-2 col-lg-4 col-md-4 col-sm-12">
-                            <label for="inputState">Sender service class</label>
+                          <div class="form-group col-xl-2 col-lg-3 col-md-4 col-sm-12">
+                            <label for="inputState">Category</label>
                             <select id="inputState" class="form-control">
                               <option selected>All</option>
                               <option>One</option>
@@ -145,9 +136,8 @@
                               <option>Three</option>
                             </select>
                           </div>
-
-                          <div class="form-group col-xl-2 col-lg-4 col-md-4 col-sm-12">
-                            <label for="inputState">Receiver type</label>
+                          <div class="form-group col-xl-2 col-lg-3 col-md-4 col-sm-12">
+                            <label for="inputState">Grade</label>
                             <select id="inputState" class="form-control">
                               <option selected>All</option>
                               <option>One</option>
@@ -155,16 +145,7 @@
                               <option>Three</option>
                             </select>
                           </div>
-                          <div class="form-group col-xl-2 col-lg-4 col-md-4 col-sm-12">
-                            <label for="inputState">Receiver service class</label>
-                            <select id="inputState" class="form-control">
-                              <option selected>All</option>
-                              <option>One</option>
-                              <option>Two</option>
-                              <option>Three</option>
-                            </select>
-                          </div>
-                          <div class="form-group col-xl-2 col-lg-4 col-md-4 col-sm-12">
+                          <div class="form-group col-xl-2 col-lg-3 col-md-4 col-sm-12">
                             <label for="inputState">Status</label>
                             <select id="inputState" class="form-control">
                               <option selected>All</option>
@@ -188,6 +169,27 @@
                 </div>
                 <div class="card">
                   <div>
+                    <div class="row px-4 pt-3">
+                      <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="d-flex mt-3">
+                          <p class="mb-0 mr-3"><b>15</b> transer rule are selected. <a class="text-primary" href=""> Show Selected</a></p>
+                          <a class="" style="color: #FFBE45;" href="">Clear</a>
+                        </div>
+                        <a class="text-primary" href="">Select all 107 transfer rule.</a>
+                      </div>
+                      <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="text-lg-right text-md-right">
+                          <a class="btn mr-2" href="edit-transfer-rule-channel-to-subscribe.html">
+                            <i class="fal fa-edit mr-2"></i>
+                            Modif Selected
+                          </a>
+                          <a class="btn" href="">
+                            <i class="fal fa-trash-alt mr-2"></i>
+                            Delete Selected
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                     <div class="row py-4 px-3 px-md-0 mb-3">
                       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                         <div class="input-group has-search ml-0 ml-md-4">
@@ -205,7 +207,8 @@
                         </div>
                       </div>
                       <div class="offset-xl-2 col-xl-4 col-lg-6 col-md-6 col-sm-12 text-center text-md-right">
-                        <a class="btn mr-4" href="peer-to-peer-add-card-group-set.html"><i class="fal fa-plus-circle mr-2"></i>Add Card Group Set</a>
+                        <a class="btn mr-4" href="add-transfer-rule-peer-to-peer.html"><i class="fal fa-plus-circle mr-2"></i>ADD TRANSFER
+                          RULES</a>
                       </div>
                     </div>
                     <div class="table-container">
@@ -221,19 +224,31 @@
                               </form>
                             </th>
                             <th class="border-top-0 border-bottom-0" scope="col">
-                              Card Group Set Name
+                              Request gateway code
                             </th>
                             <th class="border-top-0 border-bottom-0" scope="col">
-                              Sub-service
+                              Channel domain
                             </th>
                             <th class="border-top-0 border-bottom-0" scope="col">
-                              Card Group Set type
+                              Channel category
                             </th>
                             <th class="border-top-0 border-bottom-0" scope="col">
-                              Version
+                              Channel grade
                             </th>
                             <th class="border-top-0 border-bottom-0" scope="col">
-                              Applicable from
+                              Receiver type
+                            </th>
+                            <th class="border-top-0 border-bottom-0" scope="col">
+                              Receiver service class
+                            </th>
+                            <th class="border-top-0 border-bottom-0" scope="col">
+                              Service type
+                            </th>
+                            <th class="border-top-0 border-bottom-0" scope="col">
+                              Sub service
+                            </th>
+                            <th class="border-top-0 border-bottom-0" scope="col">
+                              Card group set
                             </th>
                             <th class="border-top-0 border-bottom-0" scope="col">
                               Status
@@ -253,37 +268,22 @@
                                 </div>
                               </form>
                             </th>
-                            <td>
-                              <a class="text-primary" href="peer-to-peer-view-card-group-set.html"> ComPro1 </a>
-                              <span class="text-green"><sup><i class="fas fa-check-circle"></i></sup>
-                                (Default)</span>
-                            </td>
-                            <td>CVG</td>
-                            <td>Normal</td>
-                            <td>
-                              <select id="inputState" class="form-control">
-                                <option selected>3</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                              </select>
-                            </td>
-                            <td>
-                              24-04-2019 <br />
-                              09:10:17
-                            </td>
+                            <td>All</td>
+                            <td>Distributor</td>
+                            <td>Super distributor</td>
+                            <td>AUT16056</td>
+                            <td>Postpaid subscriber</td>
+                            <td>All (All)</td>
+                            <td>Postpaid bill payment</td>
+                            <td>Postpaid</td>
+                            <td>neo1</td>
                             <td class="text-success">Active</td>
                             <td>
                               <div class="action-icons">
-                                <a class="light-text mr-2" href="peer-to-peer-modify-card-group-set.html">
+                                <a class="light-text mr-2" href="edit-transfer-rule-channel-to-subscribe.html">
                                   <i class="fal fa-edit"></i>
                                 </a>
-                                <a class="light-text mr-2" href="">
-                                  <i class="fal fa-cog"></i>
-                                </a>
-                                <a class="light-text mr-2" href="">
-                                  <i class="fal fa-ban"></i>
-                                </a>
+
                                 <a class="light-text mr-2" href="">
                                   <i class="fal fa-trash-alt"></i>
                                 </a>
@@ -294,40 +294,27 @@
                             <th scope="row">
                               <form action="">
                                 <div class="custom-control custom-checkbox">
-                                  <input type="checkbox" class="custom-control-input" id="c1" />
-                                  <label class="custom-control-label" for="c1"></label>
+                                  <input type="checkbox" class="custom-control-input" id="customCheck1" />
+                                  <label class="custom-control-label" for="customCheck1"></label>
                                 </div>
                               </form>
                             </th>
-                            <td>
-                              <a class="text-primary" href="peer-to-peer-view-card-group-set.html"> ComPro1 </a>
-                            </td>
-                            <td>CVG</td>
-                            <td>Noraml</td>
-                            <td>
-                              <select id="inputState" class="form-control">
-                                <option selected>3</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                              </select>
-                            </td>
-                            <td>
-                              24-04-2019 <br />
-                              09:10:17
-                            </td>
+                            <td>All</td>
+                            <td>Distributor</td>
+                            <td>Super distributor</td>
+                            <td>AUT16056</td>
+                            <td>Postpaid subscriber</td>
+                            <td>All (All)</td>
+                            <td>Postpaid bill payment</td>
+                            <td>Postpaid</td>
+                            <td>neo1</td>
                             <td class="text-success">Active</td>
                             <td>
                               <div class="action-icons">
-                                <a class="light-text mr-2" href="peer-to-peer-modify-card-group-set.html">
+                                <a class="light-text mr-2" href="edit-transfer-rule-channel-to-subscribe.html">
                                   <i class="fal fa-edit"></i>
                                 </a>
-                                <a class="light-text mr-2" href="">
-                                  <i class="fal fa-cog"></i>
-                                </a>
-                                <a class="light-text mr-2" href="">
-                                  <i class="fal fa-ban"></i>
-                                </a>
+
                                 <a class="light-text mr-2" href="">
                                   <i class="fal fa-trash-alt"></i>
                                 </a>
@@ -338,40 +325,27 @@
                             <th scope="row">
                               <form action="">
                                 <div class="custom-control custom-checkbox">
-                                  <input type="checkbox" class="custom-control-input" id="c2" />
-                                  <label class="custom-control-label" for="c2"></label>
+                                  <input type="checkbox" class="custom-control-input" id="customCheck1" />
+                                  <label class="custom-control-label" for="customCheck1"></label>
                                 </div>
                               </form>
                             </th>
-                            <td>
-                              <a class="text-primary" href="peer-to-peer-view-card-group-set.html"> ComPro1 </a>
-                            </td>
-                            <td>CVG</td>
-                            <td>Normla</td>
-                            <td>
-                              <select id="inputState" class="form-control">
-                                <option selected>3</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                              </select>
-                            </td>
-                            <td>
-                              24-04-2019 <br />
-                              09:10:17
-                            </td>
+                            <td>All</td>
+                            <td>Distributor</td>
+                            <td>Super distributor</td>
+                            <td>AUT16056</td>
+                            <td>Postpaid subscriber</td>
+                            <td>All (All)</td>
+                            <td>Postpaid bill payment</td>
+                            <td>Postpaid</td>
+                            <td>neo1</td>
                             <td class="text-success">Active</td>
                             <td>
                               <div class="action-icons">
-                                <a class="light-text mr-2" href="peer-to-peer-modify-card-group-set.html">
+                                <a class="light-text mr-2" href="edit-transfer-rule-channel-to-subscribe.html">
                                   <i class="fal fa-edit"></i>
                                 </a>
-                                <a class="light-text mr-2" href="">
-                                  <i class="fal fa-cog"></i>
-                                </a>
-                                <a class="light-text mr-2" href="">
-                                  <i class="fal fa-ban"></i>
-                                </a>
+
                                 <a class="light-text mr-2" href="">
                                   <i class="fal fa-trash-alt"></i>
                                 </a>
@@ -382,40 +356,27 @@
                             <th scope="row">
                               <form action="">
                                 <div class="custom-control custom-checkbox">
-                                  <input type="checkbox" class="custom-control-input" id="c3" />
-                                  <label class="custom-control-label" for="c3"></label>
+                                  <input type="checkbox" class="custom-control-input" id="customCheck1" />
+                                  <label class="custom-control-label" for="customCheck1"></label>
                                 </div>
                               </form>
                             </th>
-                            <td>
-                              <a class="text-primary" href="peer-to-peer-view-card-group-set.html"> ComPro1 </a>
-                            </td>
-                            <td>CVG</td>
-                            <td>Normal</td>
-                            <td>
-                              <select id="inputState" class="form-control">
-                                <option selected>3</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                              </select>
-                            </td>
-                            <td>
-                              24-04-2019 <br />
-                              09:10:17
-                            </td>
+                            <td>All</td>
+                            <td>Distributor</td>
+                            <td>Super distributor</td>
+                            <td>AUT16056</td>
+                            <td>Postpaid subscriber</td>
+                            <td>All (All)</td>
+                            <td>Postpaid bill payment</td>
+                            <td>Postpaid</td>
+                            <td>neo1</td>
                             <td class="text-success">Active</td>
                             <td>
                               <div class="action-icons">
-                                <a class="light-text mr-2" href="peer-to-peer-modify-card-group-set.html">
+                                <a class="light-text mr-2" href="edit-transfer-rule-channel-to-subscribe.html">
                                   <i class="fal fa-edit"></i>
                                 </a>
-                                <a class="light-text mr-2" href="">
-                                  <i class="fal fa-cog"></i>
-                                </a>
-                                <a class="light-text mr-2" href="">
-                                  <i class="fal fa-ban"></i>
-                                </a>
+
                                 <a class="light-text mr-2" href="">
                                   <i class="fal fa-trash-alt"></i>
                                 </a>
@@ -426,40 +387,27 @@
                             <th scope="row">
                               <form action="">
                                 <div class="custom-control custom-checkbox">
-                                  <input type="checkbox" class="custom-control-input" id="c4" />
-                                  <label class="custom-control-label" for="c4"></label>
+                                  <input type="checkbox" class="custom-control-input" id="customCheck1" />
+                                  <label class="custom-control-label" for="customCheck1"></label>
                                 </div>
                               </form>
                             </th>
-                            <td>
-                              <a class="text-primary" href="peer-to-peer-view-card-group-set.html"> ComPro1 </a>
-                            </td>
-                            <td>CVG</td>
-                            <td>Normal</td>
-                            <td>
-                              <select id="inputState" class="form-control">
-                                <option selected>3</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                              </select>
-                            </td>
-                            <td>
-                              24-04-2019 <br />
-                              09:10:17
-                            </td>
+                            <td>All</td>
+                            <td>Distributor</td>
+                            <td>Super distributor</td>
+                            <td>AUT16056</td>
+                            <td>Postpaid subscriber</td>
+                            <td>All (All)</td>
+                            <td>Postpaid bill payment</td>
+                            <td>Postpaid</td>
+                            <td>neo1</td>
                             <td class="text-success">Active</td>
                             <td>
                               <div class="action-icons">
-                                <a class="light-text mr-2" href="peer-to-peer-modify-card-group-set.html">
+                                <a class="light-text mr-2" href="edit-transfer-rule-channel-to-subscribe.html">
                                   <i class="fal fa-edit"></i>
                                 </a>
-                                <a class="light-text mr-2" href="">
-                                  <i class="fal fa-cog"></i>
-                                </a>
-                                <a class="light-text mr-2" href="">
-                                  <i class="fal fa-ban"></i>
-                                </a>
+
                                 <a class="light-text mr-2" href="">
                                   <i class="fal fa-trash-alt"></i>
                                 </a>
@@ -470,40 +418,27 @@
                             <th scope="row">
                               <form action="">
                                 <div class="custom-control custom-checkbox">
-                                  <input type="checkbox" class="custom-control-input" id="c5" />
-                                  <label class="custom-control-label" for="c5"></label>
+                                  <input type="checkbox" class="custom-control-input" id="customCheck1" />
+                                  <label class="custom-control-label" for="customCheck1"></label>
                                 </div>
                               </form>
                             </th>
-                            <td>
-                              <a class="text-primary" href="peer-to-peer-view-card-group-set.html"> ComPro1 </a>
-                            </td>
-                            <td>CVG</td>
-                            <td>Normal</td>
-                            <td>
-                              <select id="inputState" class="form-control">
-                                <option selected>3</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                              </select>
-                            </td>
-                            <td>
-                              24-04-2019 <br />
-                              09:10:17
-                            </td>
+                            <td>All</td>
+                            <td>Distributor</td>
+                            <td>Super distributor</td>
+                            <td>AUT16056</td>
+                            <td>Postpaid subscriber</td>
+                            <td>All (All)</td>
+                            <td>Postpaid bill payment</td>
+                            <td>Postpaid</td>
+                            <td>neo1</td>
                             <td class="text-success">Active</td>
                             <td>
                               <div class="action-icons">
-                                <a class="light-text mr-2" href="peer-to-peer-modify-card-group-set.html">
+                                <a class="light-text mr-2" href="edit-transfer-rule-channel-to-subscribe.html">
                                   <i class="fal fa-edit"></i>
                                 </a>
-                                <a class="light-text mr-2" href="">
-                                  <i class="fal fa-cog"></i>
-                                </a>
-                                <a class="light-text mr-2" href="">
-                                  <i class="fal fa-ban"></i>
-                                </a>
+
                                 <a class="light-text mr-2" href="">
                                   <i class="fal fa-trash-alt"></i>
                                 </a>
@@ -514,40 +449,27 @@
                             <th scope="row">
                               <form action="">
                                 <div class="custom-control custom-checkbox">
-                                  <input type="checkbox" class="custom-control-input" id="c6" />
-                                  <label class="custom-control-label" for="c6"></label>
+                                  <input type="checkbox" class="custom-control-input" id="customCheck1" />
+                                  <label class="custom-control-label" for="customCheck1"></label>
                                 </div>
                               </form>
                             </th>
-                            <td>
-                              <a class="text-primary" href="peer-to-peer-view-card-group-set.html"> ComPro1 </a>
-                            </td>
-                            <td>CVG</td>
-                            <td>Normal</td>
-                            <td>
-                              <select id="inputState" class="form-control">
-                                <option selected>3</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                              </select>
-                            </td>
-                            <td>
-                              24-04-2019 <br />
-                              09:10:17
-                            </td>
+                            <td>All</td>
+                            <td>Distributor</td>
+                            <td>Super distributor</td>
+                            <td>AUT16056</td>
+                            <td>Postpaid subscriber</td>
+                            <td>All (All)</td>
+                            <td>Postpaid bill payment</td>
+                            <td>Postpaid</td>
+                            <td>neo1</td>
                             <td class="text-success">Active</td>
                             <td>
                               <div class="action-icons">
-                                <a class="light-text mr-2" href="peer-to-peer-modify-card-group-set.html">
+                                <a class="light-text mr-2" href="edit-transfer-rule-channel-to-subscribe.html">
                                   <i class="fal fa-edit"></i>
                                 </a>
-                                <a class="light-text mr-2" href="">
-                                  <i class="fal fa-cog"></i>
-                                </a>
-                                <a class="light-text mr-2" href="">
-                                  <i class="fal fa-ban"></i>
-                                </a>
+
                                 <a class="light-text mr-2" href="">
                                   <i class="fal fa-trash-alt"></i>
                                 </a>
@@ -625,23 +547,9 @@
                     <form class="comission-profile-filter-form" action="">
                       <div class="form-row">
                         <div class="form-group col-lg-2 col-md-4 col-sm-12">
-                          <label for="inputState">Service Type</label>
-                          <select class="custom-select">
-                            <option selected>Select</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                        </div>
-                        <div class="form-group col-lg-2 col-md-4 col-sm-12">
-                          <label for="inputState">Date</label>
-                          <input type="date" id="inputState" class="form-control"
-                            placeholder="" />
-                        </div>
-                        <div class="form-group col-lg-2 col-md-4 col-sm-12">
-                          <label for="inputState">Peer to Peer Group Set Name</label>
+                          <label for="inputState">Batch name</label>
                           <input type="text" id="inputState" class="form-control"
-                            placeholder="Search" />
+                            placeholder="Search by Profile name" />
                         </div>
                       </div>
                       <div class="upload-image mt-4">
