@@ -89,7 +89,7 @@
                 <div class="d-flex mb-lg-0 mb-2">
                   <a class="text-dark" href="transfer-control-profile.html">Transfer Control Profile</a>
                   <span class="mx-2"><i class="text-secondary fas fa-chevron-right"></i></span>
-                  <h4>Add</h4>
+                  <h4>Modify</h4>
                 </div>
               </div>
               <div class="col-lg-6 order-1 order-lg-2">
@@ -105,16 +105,24 @@
           <div class="col-12">
             <div class="card p-4 mb-3">
               <div class="row">
-                <div class="col-lg-2 col-md-4 col-sm-12">
+                <div class="col-lg-2 col-md-4 col-sm-12 order-lg-first order-md-second order-sm-second">
                   <div class="">
                     <p class="small light-text mb-1 text-uppercase">Domain</p>
                     <p class="mb-0">Distributor</p>
                   </div>
                 </div>
-                <div class="col-lg-2 col-md-4 col-sm-12">
+                <div class="col-lg-2 col-md-4 col-sm-12 order-lg-second order-md-last order-sm-last">
                   <div class="">
                     <p class="small light-text mb-1 text-uppercase">Category</p>
                     <p class="mb-0">Super Distributor</p>
+                  </div>
+                </div>
+                <div class="col-lg-8 col-md-12 col-sm-12 order-lg-last order-md-first order-sm-first">
+                  <div class="text-right">
+                    <p class="mb-1 text-success"><i class="fas fa-circle mr-2 text-success"></i>Active</p>
+                    <a href="">
+                      <i class="fal fa-trash-alt fa-lg"></i>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -178,9 +186,9 @@
                           <th class="text-center" scope="col">Minimum Resiual balance</th>
                           <th class="text-center" scope="col">Maximum Balance</th>
                           <th class="text-center" class="text-center" scope="col" colspan="2">Per Channel to subscribe transection amount
-                            <div class="d-flex justify-content-between">
-                              <p class="text-center">Minimum</p>
-                              <p class="text-center">Maximum</p>
+                            <div class="d-flex justify-content-between mt-2">
+                              <p class="text-center ml-4">Minimum</p>
+                              <p class="text-center mr-4">Maximum</p>
                             </div>
                           </th>
                           <th class="text-center" scope="col">Alerting Balance</th>
@@ -245,9 +253,9 @@
                   <div class="row">
                     <div class="col-12">
                       <div class="list-group" style="flex-direction: initial;" id="list-tab" role="tablist">
-                        <a class="list-group-item list-group-item-action transfer-control-preference-filter-link active" style="border-bottom-left-radius: 0.25rem; border-top-right-radius: 0px;" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Daily</a>
-                        <a class="list-group-item list-group-item-action transfer-control-preference-filter-link" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Weekly</a>
-                        <a class="list-group-item list-group-item-action transfer-control-preference-filter-link" style="border-bottom-left-radius: 0rem; border-top-right-radius: 0.25rem;" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Monthly</a>
+                        <a class="list-group-item list-group-item-action transfer-control-preference-filter-link active" style="border-bottom-left-radius: 0.25rem; border-top-right-radius: 0px;" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>
+                        <a class="list-group-item list-group-item-action transfer-control-preference-filter-link" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+                        <a class="list-group-item list-group-item-action transfer-control-preference-filter-link" style="border-bottom-left-radius: 0rem; border-top-right-radius: 0.25rem;" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
                       </div>
                     </div>
                     <div class="col-12">
