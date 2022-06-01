@@ -18,7 +18,7 @@
     href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css" />
   <link href="assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
-
+  <link href="assets/css/nice-select.css" rel="stylesheet" />
     <!-- Added these scripts -->  
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous">
@@ -126,7 +126,7 @@
                         <div class="form-row">
                           <div class="form-group col-xl-2 col-lg-3 col-md-4 col-sm-12">
                             <label for="inputState">Service</label>
-                            <select id="inputState" class="form-control">
+                            <select id="inputState" class="nice-select w-100">
                               <option selected>All</option>
                               <option>One</option>
                               <option>Two</option>
@@ -135,7 +135,7 @@
                           </div>
                           <div class="form-group col-xl-2 col-lg-3 col-md-4 col-sm-12">
                             <label for="inputState">Sub-Service</label>
-                            <select id="inputState" class="form-control">
+                            <select id="inputState" class="nice-select w-100">
                               <option selected>All</option>
                               <option>One</option>
                               <option>Two</option>
@@ -144,7 +144,7 @@
                           </div>
                           <div class="form-group col-xl-2 col-lg-3 col-md-4 col-sm-12">
                             <label for="inputState">Card Group Set Type</label>
-                            <select id="inputState" class="form-control">
+                            <select id="inputState" class="nice-select w-100">
                               <option selected>All</option>
                               <option>One</option>
                               <option>Two</option>
@@ -186,6 +186,15 @@
                         </div>
                       </div>
                     </div>
+                    <div class="row">
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <h4 class="mb-4 ml-4 mt-2">Channel to subscriber card group set</h4>
+                      </div>
+                      <div class="col-lg-6 col-md-12 col-sm-12 text-lg-left text-sm-right text-md-right">
+                        <a class="btn ml-4 mt-0" href="channel-to-subscribe-add-card-group-set.html"><i class="fal fa-plus-circle mr-2"></i>ADD TRANSFER
+                          RULES</a>
+                      </div>
+                    </div>
                     <div class="row py-4 px-3 px-md-0 mb-3">
                       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                         <div class="input-group has-search ml-0 ml-md-4">
@@ -202,10 +211,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="offset-xl-2 col-xl-4 col-lg-6 col-md-6 col-sm-12 text-center text-md-right">
-                        <a class="btn mr-4" href=""><i class="fal fa-plus-circle mr-2"></i>ADD TRANSFER
-                          RULES</a>
-                      </div>
+                      
                     </div>
                     <div class="table-container">
                       <table class="table mb-5">
@@ -219,25 +225,25 @@
                                 </div>
                               </form>
                             </th>
-                            <th class="border-top-0 border-bottom-0" scope="col">
+                            <th class="border-top-0 border-bottom-0 text-transform-normal" scope="col">
                               Card Group Set Name
                             </th>
-                            <th class="border-top-0 border-bottom-0" scope="col">
+                            <th class="border-top-0 border-bottom-0 text-transform-normal" scope="col">
                               Sub-service
                             </th>
-                            <th class="border-top-0 border-bottom-0" scope="col">
+                            <th class="border-top-0 border-bottom-0 text-transform-normal" scope="col">
                               Card Group Set type
                             </th>
-                            <th class="border-top-0 border-bottom-0" scope="col">
+                            <th class="border-top-0 border-bottom-0 text-transform-normal" scope="col">
                               Version
                             </th>
-                            <th class="border-top-0 border-bottom-0" scope="col">
+                            <th class="border-top-0 border-bottom-0 text-transform-normal" scope="col">
                               Applicable from
                             </th>
-                            <th class="border-top-0 border-bottom-0" scope="col">
+                            <th class="border-top-0 border-bottom-0 text-transform-normal" scope="col">
                               Status
                             </th>
-                            <th class="border-top-0 border-bottom-0" scope="col">
+                            <th class="border-top-0 border-bottom-0 text-transform-normal" scope="col">
                               Action
                             </th>
                           </tr>
@@ -260,7 +266,7 @@
                             <td>CVG</td>
                             <td>Normal</td>
                             <td>
-                              <select id="inputState" class="form-control">
+                              <select id="inputState" class="nice-select w-100">
                                 <option selected>3</option>
                                 <option>1</option>
                                 <option>2</option>
@@ -304,7 +310,7 @@
                             <td>CVG</td>
                             <td>Noraml</td>
                             <td>
-                              <select id="inputState" class="form-control">
+                              <select id="inputState" class="nice-select w-100">
                                 <option selected>3</option>
                                 <option>1</option>
                                 <option>2</option>
@@ -348,7 +354,7 @@
                             <td>CVG</td>
                             <td>Normla</td>
                             <td>
-                              <select id="inputState" class="form-control">
+                              <select id="inputState" class="nice-select w-100">
                                 <option selected>3</option>
                                 <option>1</option>
                                 <option>2</option>
@@ -392,7 +398,7 @@
                             <td>CVG</td>
                             <td>Normal</td>
                             <td>
-                              <select id="inputState" class="form-control">
+                              <select id="inputState" class="nice-select w-100">
                                 <option selected>3</option>
                                 <option>1</option>
                                 <option>2</option>
@@ -436,7 +442,7 @@
                             <td>CVG</td>
                             <td>Normal</td>
                             <td>
-                              <select id="inputState" class="form-control">
+                              <select id="inputState" class="nice-select w-100">
                                 <option selected>3</option>
                                 <option>1</option>
                                 <option>2</option>
@@ -480,7 +486,7 @@
                             <td>CVG</td>
                             <td>Normal</td>
                             <td>
-                              <select id="inputState" class="form-control">
+                              <select id="inputState" class="nice-select w-100">
                                 <option selected>3</option>
                                 <option>1</option>
                                 <option>2</option>
@@ -524,7 +530,7 @@
                             <td>CVG</td>
                             <td>Normal</td>
                             <td>
-                              <select id="inputState" class="form-control">
+                              <select id="inputState" class="nice-select w-100">
                                 <option selected>3</option>
                                 <option>1</option>
                                 <option>2</option>
@@ -624,8 +630,17 @@
                     <form class="comission-profile-filter-form" action="">
                       <div class="form-row">
                         <div class="form-group col-lg-2 col-md-4 col-sm-12">
-                          <label for="inputState">Batch name</label>
-                          <input type="text" id="inputState" class="form-control"
+                          <label for="inputState">Service Type</label>
+                          <select id="inputState" class="nice-select w-100">
+                            <option selected>Select</option>
+                            <option>One</option>
+                            <option>Two</option>
+                            <option>Three</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-lg-2 col-md-4 col-sm-12">
+                          <label for="inputState">Date</label>
+                          <input type="date" id="inputState" class="form-control"
                             placeholder="Search by Profile name" />
                         </div>
                       </div>
@@ -703,6 +718,8 @@
   <script src="assets/js/plugins/bootstrap-notify.js"></script>
   <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="assets/js/paper-dashboard.min.js?v=2.0.1" type="text/javascript"></script>
+  <script src="assets/js/jquery.nice-select.js"></script>
+  <script src="assets/js/custom.js"></script>
 </body>
 
 </html>

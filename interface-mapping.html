@@ -18,7 +18,7 @@
     href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css" />
   <link href="assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
-
+  <link href="assets/css/nice-select.css" rel="stylesheet" />
 
   <link href="assets/css/saad.css" rel="stylesheet" />
     <!-- Added these scripts -->  
@@ -105,7 +105,7 @@
                     <div class="form-row">
                       <div class="form-group col-xl-2 col-lg-4 col-md-4 col-sm-12">
                         <label for="inputState">Service</label>
-                        <select id="inputState" class="form-control">
+                        <select id="inputState" class="nice-select w-100">
                           <option selected>All</option>
                           <option>One</option>
                           <option>Two</option>
@@ -134,8 +134,7 @@
                     </div>
                   </div>
                   <div class="offset-xl-2 col-xl-4 col-lg-6 col-md-6 col-sm-12 text-center text-md-right">
-                    <a class="btn mr-4" href=""><i class="fal fa-plus-circle mr-2"></i>ADD
-                      PROFILE</a>
+                    <a class="btn mr-4" href="add-interface-mapping.html"><i class="fal fa-plus-circle mr-2"></i>ADD</a>
                   </div>
                 </div>
                 <h4 class="mb-3">Avaible Series</h4>
@@ -143,7 +142,7 @@
                     <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="row bg-light p-3 mr-2">
                             <div class="col-2">
-                                <p>
+                                <p class="text-muted">
                                     Prepaid
                                 </p>
                             </div>
@@ -157,7 +156,7 @@
                     <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="row bg-light p-3">
                             <div class="col-2">
-                                <p>
+                                <p class="text-muted">
                                     Postpaid
                                 </p>
                             </div>
@@ -170,15 +169,15 @@
                     </div>
                 </div>
                 <div class="table-responsive mt-4 bordered-table-custome">
-                    <table class="table table-bordered w-100 m-0">
+                    <table class="table table-bordered w-100 m-0" style="border: 1px solid #DFE3E8;">
                         <thead class="thead-light">
                           <tr>
-                            <th scope="col" class="font-weight-normal" style="border-left: 1px solid #000;">Serial Number</th>
-                            <th scope="col" class="font-weight-normal">Service Name</th>
-                            <th scope="col" class="font-weight-normal">Products</th>
-                            <th scope="col" class="font-weight-normal">Interface Name</th>
-                            <th scope="col" class="font-weight-normal">Interface</th>
-                            <th scope="col" colspan="2" class="font-weight-normal">
+                            <th scope="col" class="font-weight-normal text-transform-normal" style="border-left: 1px solid #000;">Serial Number</th>
+                            <th scope="col" class="font-weight-normal text-transform-normal">Service Name</th>
+                            <th scope="col" class="font-weight-normal text-transform-normal">Products</th>
+                            <th scope="col" class="font-weight-normal text-transform-normal">Interface Name</th>
+                            <th scope="col" class="font-weight-normal text-transform-normal">Interface</th>
+                            <th scope="col" colspan="2" class="font-weight-normal text-transform-normal">
                                 Prefix series (Validation)
                                 <div class="d-flex justify-content-between mt-4">
                                     <p>
@@ -189,7 +188,7 @@
                                     </p>
                                 </div>
                             </th>
-                            <th scope="col" colspan="2" class="font-weight-normal">
+                            <th scope="col" colspan="2" class="font-weight-normal text-transform-normal">
                                 Prefix series (Update series)
                                 <div class="d-flex justify-content-between mt-4">
                                     <p>
@@ -225,7 +224,7 @@
                                       <div class="modal-content p-2">
                                         <div class="border p-2" style="border-radius: 10px;">
                                           <div class="modal-header border-bottom-0 d-block">
-                                            <h4 class="" style="color: #000; font-weight: bold; padding-left: 25px; padding-right: 25px;">Modify</h4>
+                                            <h4 class="" style="color: #000; font-weight: bold;  padding-right: 25px;">Modify</h4>
                                             <hr>
                                             <div class="row">
                                                 <div class="col-12">
@@ -261,7 +260,7 @@
                                                       </div>
                                                 </div>
                                             </div>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="padding: 0px; margin-top: -150px; margin-right: -10px;">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="padding: 0px; margin-top: -330px; margin-right: -10px;">
                                               <span aria-hidden="true">&times;</span>
                                             </button>
                                           </div>
@@ -429,6 +428,8 @@
   <script src="assets/js/plugins/bootstrap-notify.js"></script>
   <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="assets/js/paper-dashboard.min.js?v=2.0.1" type="text/javascript"></script>
+  <script src="assets/js/jquery.nice-select.js"></script>
+  <script src="assets/js/custom.js"></script>
 </body>
 
 </html>

@@ -5052,7 +5052,7 @@ sup {
 
 .footer {
   padding-top: 100px;
-  background-image: url("../img/footer-bg.png");
+  background-image: url("../img/Illustration.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -6032,6 +6032,7 @@ sup {
   .footer .copyright {
     float: right;
     padding-right: 15px;
+    padding-bottom: 12px;
   }
   .sidebar .sidebar-wrapper li.active > a:not([data-toggle="collapse"]):before,
   .sidebar
@@ -7351,4 +7352,80 @@ table thead tr th{
   width: 100%;
   border-radius: 0px!important;
   padding: 10px 10px 10px 10px;
+}
+.comission .comission-profile-filter-form input{
+  padding: 10px!important;
+}
+.has-search .form-control {
+  padding-left: 0.575rem;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  background: #f4f6f8;
+  border: none !important;
+}
+.text-transform-normal{
+  text-transform: initial!important;
+}
+.main-panel > .content {
+  padding: 0 30px 30px;
+  /* min-height: calc(100vh - px); */
+  /* height: 500vh; */
+  min-height: 500vh!important;
+  margin-top: 86px;
+}
+.table > tbody > tr > td{
+font-size: 12px;
+}
+.green-sucess-btn{
+  border: 1px solid #EEEFF2;
+  color: #28C164;
+  background: transparent;
+}
+.red-danger-btn{
+  border: none;
+  color: #FF4F61;
+  background: transparent;
+}
+.custom-control-input:checked~.custom-control-label::before {
+  color: #fff;
+  border-color: #FFBE45;
+  background-color: #FFBE45;
+}
+.wrapper {
+  position: relative;
+  top: 0;
+  min-height: 500vh;
+}
+.nav-tabs .nav-link{
+  transition: none;
+}
+.within-input-field{
+  height: 39px!important;
+  border-top-right-radius: 0px!important;
+  border-bottom-right-radius: 0px!important;
+  padding-left: 6px!important;
+  padding-right: 3px!important;
+}
+.within-input-field.open .list {
+  width: auto!important;
+}
+.within-input-field-input{
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.nice-select-rounde{
+  border-radius: 60px!important;
+}
+.borde-left-customization-input{
+  border-left: none!important;
+  border-top-left-radius: 0px!important;
+  border-bottom-left-radius: 0px!important;
+}
+.select-icon-setting{
+  margin-top: 14px;
+  margin-left: 10px;
+}
+.side-slect{
+  width: auto!important;
 }

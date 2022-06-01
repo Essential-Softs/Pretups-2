@@ -18,7 +18,7 @@
     href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css" />
   <link href="assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
-
+  <link href="assets/css/nice-select.css" rel="stylesheet" />
     <!-- Added these scripts -->  
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous">
@@ -103,7 +103,7 @@
                     <div class="form-row">
                       <div class="form-group col-xl-2 col-lg-4 col-md-4 col-sm-12">
                         <label for="inputState">Service</label>
-                        <select id="inputState" class="form-control">
+                        <select id="inputState" class="nice-select w-100">
                           <option selected>All</option>
                           <option>One</option>
                           <option>Two</option>
@@ -128,12 +128,12 @@
                 <div class="row py-3 px-3 px-md-0">
                   <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                     <div class="py-2">
-                        <p>Network Name: <span>Network GGN</span></p>
+                        <p>Network Name: <span class="font-weight-bold">Network GGN</span></p>
                     </div>
                   </div>
                   <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                     <div class="py-2">
-                        <p>Service Name: <span>Customer Recharge</span></p>
+                        <p>Service Name: <span class="font-weight-bold">Customer Recharge</span></p>
                     </div>
                   </div>
                 </div>
@@ -142,7 +142,7 @@
                     <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="row bg-light p-3 mr-2">
                             <div class="col-2">
-                                <p>
+                                <p class="text-muted">
                                     Prepaid
                                 </p>
                             </div>
@@ -156,7 +156,7 @@
                     <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="row bg-light p-3">
                             <div class="col-2">
-                                <p>
+                                <p class="text-muted">
                                     Postpaid
                                 </p>
                             </div>
@@ -172,11 +172,11 @@
                     <table class="table table-bordered w-100 m-0">
                         <thead class="thead-light">
                           <tr>
-                            <th scope="col" class="font-weight-normal" style="border-left: 1px solid #000;">Serial Number</th>
-                            <th scope="col" class="font-weight-normal">Product</th>
-                            <th scope="col" class="font-weight-normal">Interface Name</th>
-                            <th scope="col" class="font-weight-normal">Interface</th>
-                            <th scope="col" colspan="2" class="font-weight-normal">
+                            <th scope="col" class="font-weight-normal text-transform-normal" style="border-left: 1px solid #000;">Serial Number</th>
+                            <th scope="col" class="font-weight-normal text-transform-normal">Product</th>
+                            <th scope="col" class="font-weight-normal text-transform-normal">Interface Name</th>
+                            <th scope="col" class="font-weight-normal text-transform-normal">Interface</th>
+                            <th scope="col" colspan="2" class="font-weight-normal text-center text-transform-normal">
                                 Prefix series (Validation)
                                 <div class="d-flex justify-content-between mt-4">
                                     <p>
@@ -187,7 +187,7 @@
                                     </p>
                                 </div>
                             </th>
-                            <th scope="col" colspan="2" class="font-weight-normal">
+                            <th scope="col" colspan="2" class="font-weight-normal text-center text-transform-normal">
                                 Prefix series (Update series)
                                 <div class="d-flex justify-content-between mt-4">
                                     <p>
@@ -203,19 +203,19 @@
                         <tbody>
                           <tr>
                             <td>1</td>
-                            <td><select class="custom-select w-100">
+                            <td><select class="nice-select w-100">
                               <option selected>select</option>
                               <option value="1">One</option>
                               <option value="2">Two</option>
                               <option value="3">Three</option>
                             </select></td>
-                            <td><select class="custom-select w-100">
+                            <td><select class="nice-select w-100">
                               <option selected>select</option>
                               <option value="1">One</option>
                               <option value="2">Two</option>
                               <option value="3">Three</option>
                             </select></td>
-                            <td><select class="custom-select w-100">
+                            <td><select class="nice-select w-100">
                               <option selected>select</option>
                               <option value="1">One</option>
                               <option value="2">Two</option>
@@ -244,14 +244,14 @@
                 </div>
                 <div class="">
                   <a style="color: #e50029;" class="font-weight-bold" href="">
-                    <i class="fal fa-plus-circle mr-1 font-weight-bold"></i> ADD
+                    <i class="far fa-plus-circle mr-1 "></i> ADD
                   </a>
                 </div>
                 <div class="d-flex justify-content-end">
                   <button type="reset" class="btn btn-reset mr-2">
                     Reset
                   </button>
-                  <a href="add-interface-mapping-1.html" class="btn btn-light-secondary mr-2">Confirm</a>
+                  <a href="add-interface-mapping-1.html" class="btn btn-light-secondary mr-2">add</a>
                 </div>
               </div>
             </div>
@@ -285,6 +285,8 @@
   <script src="assets/js/plugins/bootstrap-notify.js"></script>
   <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="assets/js/paper-dashboard.min.js?v=2.0.1" type="text/javascript"></script>
+  <script src="assets/js/jquery.nice-select.js"></script>
+  <script src="assets/js/custom.js"></script>
 </body>
 
 </html>

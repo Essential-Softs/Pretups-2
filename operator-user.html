@@ -18,7 +18,7 @@
     href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css" />
   <link href="assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
-
+  <link href="assets/css/nice-select.css" rel="stylesheet" />
     <!-- Added these scripts -->  
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous">
@@ -102,7 +102,7 @@
                     <div class="form-row">
                       <div class="form-group col-xl-2 col-lg-4 col-md-4 col-sm-12">
                         <label for="inputState">Category</label>
-                        <select id="inputState" class="form-control">
+                        <select id="inputState" class="nice-select w-100">
                           <option selected>All</option>
                           <option>One</option>
                           <option>Two</option>
@@ -135,22 +135,34 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-5 col-md-5 col-sm-12">
-                    <form class="comission-profile-filter-form ch-form-operator" action="">
+                  <div class="col-lg-5 col-md-6 col-sm-12">
+                    <form class="comission-profile-filter-form ch-form-operator w-100 float-right" action="">
                       <div class="form-row justify-content-center justify-content-md-end px-4">
-                        <div class="form-group col-xl-4 col-lg-6 col-md-6 col-sm-4">
-                          <select id="inputState" class="form-control">
-                            <option class="font-weight-bold" selected>
-                              <i class="fal fa-arrow-to-bottom text-red download-icon mr-2"></i>
-                              Download
-                            </option>
-                            <option>One</option>
-                            <option>Two</option>
-                            <option>Three</option>
-                          </select>
+                        <div class="form-group col-lg-6 col-md-6 col-sm-6">
+                          <div class="row">
+                            <div class="d-flex border pr-3" style="border-radius: 60px;">
+                              <div class="col-2">
+                                <i class="fal fa-arrow-to-bottom fa-lg text-red select-icon-setting"></i>
+                              </div>
+                              <div class="col-10 pr-0">
+                                <select class="nice-select border-0 mr-2 font-weight-bold pr-1 nice-select-rounde borde-left-customization-input w-100">
+                                  <option selected>
+                                    <span>
+                                      Download
+                                    </span>
+                                    
+                                  </option>
+                                  <option>One</option>
+                                  <option>Two</option>
+                                  <option>Three</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          
                         </div>
-                        <div class="form-group col-xl-4 col-lg-6 col-md-6 col-sm-4">
-                          <select id="inputState" class="form-control">
+                        <div class="form-group col-lg-4 col-md-6 col-sm-6">
+                          <select class="nice-select w-100 nice-select-rounde font-weight-bold side-slect">
                             <option selected>Edit Columns</option>
                             <option>One</option>
                             <option>Two</option>
@@ -175,28 +187,28 @@
                   <table class="table ch-operator-table mb-5">
                     <thead>
                       <tr>
-                        <th class="border-top-0 border-bottom-0 ch-operator-th" scope="col">
+                        <th class="border-top-0 border-bottom-0 text-transform-normal ch-operator-th" scope="col">
                           User name
                         </th>
-                        <th class="border-top-0 border-bottom-0 ch-operator-th" scope="col">
+                        <th class="border-top-0 border-bottom-0 text-transform-normal ch-operator-th" scope="col">
                           Mobile number
                         </th>
-                        <th class="border-top-0 border-bottom-0 ch-operator-th" scope="col">
+                        <th class="border-top-0 border-bottom-0 text-transform-normal ch-operator-th" scope="col">
                           Login ID
                         </th>
-                        <th class="border-top-0 border-bottom-0 ch-operator-th" scope="col">
+                        <th class="border-top-0 border-bottom-0 text-transform-normal ch-operator-th" scope="col">
                           Registered date & time
                         </th>
-                        <th class="border-top-0 border-bottom-0 ch-operator-th" scope="col">
+                        <th class="border-top-0 border-bottom-0 text-transform-normal ch-operator-th" scope="col">
                           Last modified date & time
                         </th>
-                        <th class="border-top-0 border-bottom-0 ch-operator-th" scope="col">
+                        <th class="border-top-0 border-bottom-0 text-transform-normal ch-operator-th" scope="col">
                           Last modified by
                         </th>
-                        <th class="border-top-0 border-bottom-0 ch-operator-th" scope="col">
+                        <th class="border-top-0 border-bottom-0 text-transform-normal ch-operator-th" scope="col">
                           Status
                         </th>
-                        <th class="border-top-0 border-bottom-0" scope="col">
+                        <th class="border-top-0 border-bottom-0 text-transform-normal" scope="col">
                           Action
                         </th>
                       </tr>
@@ -446,6 +458,8 @@
   <script src="assets/js/plugins/bootstrap-notify.js"></script>
   <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="assets/js/paper-dashboard.min.js?v=2.0.1" type="text/javascript"></script>
+  <script src="assets/js/jquery.nice-select.js"></script>
+  <script src="assets/js/custom.js"></script>
 </body>
 
 </html>

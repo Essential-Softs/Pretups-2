@@ -18,7 +18,7 @@
     href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css" />
   <link href="assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
-
+  <link href="assets/css/nice-select.css" rel="stylesheet" />
     <!-- Added these scripts -->  
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous">
@@ -125,7 +125,7 @@
                         <div class="form-row">
                           <div class="form-group col-xl-2 col-lg-4 col-md-4 col-sm-12">
                             <label for="inputState">Sender type</label>
-                            <select id="inputState" class="form-control">
+                            <select id="inputState" class="nice-select w-100">
                               <option selected>All</option>
                               <option>One</option>
                               <option>Two</option>
@@ -134,7 +134,7 @@
                           </div>
                           <div class="form-group col-xl-2 col-lg-4 col-md-4 col-sm-12">
                             <label for="inputState">Sender service class</label>
-                            <select id="inputState" class="form-control">
+                            <select id="inputState" class="nice-select w-100">
                               <option selected>All</option>
                               <option>One</option>
                               <option>Two</option>
@@ -144,7 +144,7 @@
 
                           <div class="form-group col-xl-2 col-lg-4 col-md-4 col-sm-12">
                             <label for="inputState">Receiver type</label>
-                            <select id="inputState" class="form-control">
+                            <select id="inputState" class="nice-select w-100">
                               <option selected>All</option>
                               <option>One</option>
                               <option>Two</option>
@@ -153,7 +153,7 @@
                           </div>
                           <div class="form-group col-xl-2 col-lg-4 col-md-4 col-sm-12">
                             <label for="inputState">Receiver service class</label>
-                            <select id="inputState" class="form-control">
+                            <select id="inputState" class="nice-select w-100">
                               <option selected>All</option>
                               <option>One</option>
                               <option>Two</option>
@@ -162,7 +162,7 @@
                           </div>
                           <div class="form-group col-xl-2 col-lg-4 col-md-4 col-sm-12">
                             <label for="inputState">Status</label>
-                            <select id="inputState" class="form-control">
+                            <select id="inputState" class="nice-select w-100">
                               <option selected>All</option>
                               <option>One</option>
                               <option>Two</option>
@@ -184,13 +184,29 @@
                 </div>
                 <div class="card">
                   <div>
+                    <div class="row px-4 pt-3">
+                      <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="d-flex mt-3">
+                          <p class="mb-0 mr-3">All <b>10</b> records on this page are selected.</p>
+                          <a class="text-primary" href="">Clear Selection</a>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="text-lg-right text-md-right">
+                          <a class="btn" href="voucher-change-status.html">
+                            <i class="fal fa-dot-circle mr-2"></i>
+                            Change Status
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                     <div class="row py-4 px-3 px-md-0 mb-3">
-                      <div class="col-12">
+                      <!-- <div class="col-12">
                         <div class="d-flex pl-4">
                           <p class="mr-3">All <b>10</b> records on this page are selectd.</p>
                           <a class="text-primary" href="">Clear Selection</a>
                         </div>
-                      </div>
+                      </div> -->
                       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                         <div class="input-group has-search ml-0 ml-md-4">
                           <div class="input-group-prepend">
@@ -199,15 +215,15 @@
                             </div>
                           </div>
                           <input type="text" class="form-control" placeholder="Search by Profile name" />
-                          <div class="input-group-append">
+                          <!-- <div class="input-group-append">
                             <button class="btn btn-light-secondary" type="button">
                               GO
                             </button>
-                          </div>
+                          </div> -->
                         </div>
                       </div>
-                      <div class="offset-xl-2 col-xl-4 col-lg-6 col-md-6 col-sm-12 text-center text-md-right">
-                        <a class="btn mr-4" href="add-card-group-set.html"><i class="fal fa-plus-circle mr-2"></i>ADD CARD GR0UP SET</a>
+                      <div class=" col-lg-6 col-md-6 col-sm-12 text-lg-left text-md-right text-md-right">
+                        <a class="btn mr-4 ml-2 mt-0" href="add-card-group-set.html"><i class="fal fa-plus-circle mr-2"></i>ADD CARD GR0UP SET</a>
                       </div>
                     </div>
                     <div class="table-container">
@@ -263,7 +279,7 @@
                             <td>CVG</td>
                             <td>Normal</td>
                             <td>
-                              <select id="inputState" class="form-control">
+                              <select id="inputState" class="nice-select w-100">
                                 <option selected>3</option>
                                 <option>1</option>
                                 <option>2</option>
@@ -307,7 +323,7 @@
                             <td>CVG</td>
                             <td>Noraml</td>
                             <td>
-                              <select id="inputState" class="form-control">
+                              <select id="inputState" class="nice-select w-100">
                                 <option selected>3</option>
                                 <option>1</option>
                                 <option>2</option>
@@ -351,7 +367,7 @@
                             <td>CVG</td>
                             <td>Normla</td>
                             <td>
-                              <select id="inputState" class="form-control">
+                              <select id="inputState" class="nice-select w-100">
                                 <option selected>3</option>
                                 <option>1</option>
                                 <option>2</option>
@@ -395,7 +411,7 @@
                             <td>CVG</td>
                             <td>Normal</td>
                             <td>
-                              <select id="inputState" class="form-control">
+                              <select id="inputState" class="nice-select w-100">
                                 <option selected>3</option>
                                 <option>1</option>
                                 <option>2</option>
@@ -439,7 +455,7 @@
                             <td>CVG</td>
                             <td>Normal</td>
                             <td>
-                              <select id="inputState" class="form-control">
+                              <select id="inputState" class="nice-select w-100">
                                 <option selected>3</option>
                                 <option>1</option>
                                 <option>2</option>
@@ -483,7 +499,7 @@
                             <td>CVG</td>
                             <td>Normal</td>
                             <td>
-                              <select id="inputState" class="form-control">
+                              <select id="inputState" class="nice-select w-100">
                                 <option selected>3</option>
                                 <option>1</option>
                                 <option>2</option>
@@ -527,7 +543,7 @@
                             <td>CVG</td>
                             <td>Normal</td>
                             <td>
-                              <select id="inputState" class="form-control">
+                              <select id="inputState" class="nice-select w-100">
                                 <option selected>3</option>
                                 <option>1</option>
                                 <option>2</option>
@@ -712,6 +728,8 @@
   <script src="assets/js/plugins/bootstrap-notify.js"></script>
   <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="assets/js/paper-dashboard.min.js?v=2.0.1" type="text/javascript"></script>
+  <script src="assets/js/jquery.nice-select.js"></script>
+  <script src="assets/js/custom.js"></script>
 </body>
 
 </html>
